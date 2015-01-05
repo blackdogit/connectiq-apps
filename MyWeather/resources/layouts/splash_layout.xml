@@ -1,0 +1,9 @@
+<layout id="SplashLayout" background="Gfx.COLOR_WHITE2">
+    <!-- display size 205x145 -->
+	<drawable id="clearDisplay" />
+	<!-- drawable id="LauncherIcon" x="0" y="0" / -->
+	<label text="My Weather" x="120" y="88" font="Gfx.FONT_LARGE"
+	    justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_BLACK" />
+	<label text="by Black Dog IT" x="200" y="140" font="Gfx.FONT_SMALL"
+		justification="Gfx.TEXT_JUSTIFY_RIGHT" color="Gfx.COLOR_DK_GRAY" />
+</layout>
