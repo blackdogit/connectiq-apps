@@ -2,7 +2,7 @@ module MyDistanceBack {
 using Toybox.Application as App;
 
 //! Whether we are debuggng
-const DEBUG = true;
+const DEBUG = false;
 
 var USE_ANGLE = false;
 
@@ -17,7 +17,7 @@ class Application extends App.AppBase {
     }
 
     function getInitialView() {
-        return [ new DataField2() ];
+        return [ new DataField() ];
     }
 }
 }

@@ -19,6 +19,8 @@ class DataField extends Ui.SimpleDataField {
     const HEADING_W = Ui.loadResource(Rez.Strings.W);
     const HEADING_NW = Ui.loadResource(Rez.Strings.NW);
 
+    const NO_DATA = "---";
+
     //! Sets the label of the data field here.
     function initialize() {
         label = Ui.loadResource(Rez.Strings.DataFieldLabel);
@@ -39,13 +41,13 @@ class DataField extends Ui.SimpleDataField {
             if (DEBUG) {
                 Sys.println("No start location available");
             }
-            return "--";
+            return NO_DATA;
         }
         if (current == null) {
             if (DEBUG) {
                 Sys.println("No current location available");
             }
-            return "--";
+            return NO_DATA;
         }
 
         // @type [lat, long]
@@ -54,15 +56,15 @@ class DataField extends Ui.SimpleDataField {
         var currentLL = current.toRadians();
 
         // Vector from current to start
-        var dlat = startLL[0]-currentLL[0];
-        var dlong = startLL[1]-currentLL[1];
+        var dlat = (startLL[0]-currentLL[0]).toFloat();
+        var dlong = (startLL[1]-currentLL[1]).toFloat();
 
         if (DEBUG) {
             Sys.println("* "+startLL[0].toString()+" "+startLL[1].toString()+"  -->  "+currentLL[0].toString()+" "+currentLL[1].toString()+" = "+dlat.toString()+" "+dlong.toString());
         }
 
-        //var txt = calcDistance(dlat, dlong)+" "+calcHeading(dlat, dlong);
-        var txt = calcHeading(dlat, dlong);
+        var txt = calcDistance(dlat, dlong)+" "+calcHeading(dlat, dlong);
+        //var txt = calcHeading(dlat, dlong);
 
         return txt;
     }
@@ -118,9 +120,7 @@ class DataField extends Ui.SimpleDataField {
             }
         } else {
             var d = dlong/dlat;
-            Sys.println("d="+d.format("%10.8e"));
-            heading = Math.PI/2; //Math.atan(d);
-            Sys.println("atan="+heading);
+            heading = Math.atan(d.toFloat());
             if (dlat < 0) {
                 heading += Math.PI;
             }
@@ -128,7 +128,6 @@ class DataField extends Ui.SimpleDataField {
                 heading += 2.0*Math.PI;
             }
         }
-        Sys.println("...");
         heading = heading*360.0/(2.0*Math.PI);
         if (DEBUG) {
             Sys.println("  > "+heading.toString());
