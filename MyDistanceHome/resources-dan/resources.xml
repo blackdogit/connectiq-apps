@@ -1,0 +1,13 @@
+<resources>
+    <string id="AppName">Min Afstand Hjem</string>
+    <string id="DataFieldLabel">Afstand Tilbage</string>
+    
+    <string id="N">N</string>
+    <string id="NE">NØ</string>
+    <string id="E">Ø</string>
+    <string id="SE">SØ</string>
+    <string id="S">S</string>
+    <string id="SW">SV</string>
+    <string id="W">V</string>
+    <string id="NW">NV</string>
+</resources>

@@ -8,8 +8,8 @@
         </iq:products>
 
         <iq:permissions>
-            <iq:uses-permission id="Communications"/>
-            <iq:uses-permission id="Positioning"/>
+            <!-- <iq:uses-permission id="Communications"/> -->
+            <!-- <iq:uses-permission id="Positioning"/> -->
         </iq:permissions>
 
         <iq:languages>

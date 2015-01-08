@@ -1,0 +1,21 @@
+<!-- This is a generated file. It is highly recommended that you DO NOT edit 
+	this file. -->
+<iq:manifest xmlns:iq="http://www.garmin.com/xml/connectiq"
+	version="1">
+	<iq:application entry="MyHRGraphApp" id="2FE5F32CC7D843FD851888EA8E84132A"
+		launcherIcon="LauncherIcon" name="AppName" type="datafield">
+
+		<iq:products>
+			<iq:product id="fr920xt" partNumber="006-B1765-00" />
+		</iq:products>
+
+		<iq:permissions>
+            <!-- <iq:uses-permission id="Communications"/> -->
+            <!-- <iq:uses-permission id="Positioning"/> -->
+		</iq:permissions>
+
+		<iq:languages>
+		</iq:languages>
+
+	</iq:application>
+</iq:manifest>

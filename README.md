@@ -1,4 +1,4 @@
 connectiq-apps
 ==============
 
-Coonect IQ Apps
+Connect IQ Apps created and developed by Black Dog IT.
