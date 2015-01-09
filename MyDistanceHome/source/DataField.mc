@@ -63,7 +63,7 @@ class DataField extends Ui.SimpleDataField {
             Sys.println("* "+startLL[0].toString()+" "+startLL[1].toString()+"  -->  "+currentLL[0].toString()+" "+currentLL[1].toString()+" = "+dlat.toString()+" "+dlong.toString());
         }
 
-        var txt = calcDistance(dlat, dlong)+" "+calcHeading(dlat, dlong);
+        var txt = calcDistance(dlat, dlong)+"  "+calcHeading(dlat, dlong);
         //var txt = calcHeading(dlat, dlong);
 
         return txt;
@@ -79,30 +79,7 @@ class DataField extends Ui.SimpleDataField {
             Sys.println("  = "+dist.toString());
         }
 
-        // First format the distance
-        var unit = "m";
-        var du = Sys.getDeviceSettings().distanceUnits;
-        if (du == Sys.UNIT_METRIC) {
-            if (dist > 1000) {
-                dist = dist/1000;
-                unit = "km";
-            }
-        } else if (du == Sys.UNIT_STATUTE) {
-            if (dist > 1608) {
-                dist = dist/1608;
-                unit = "mi";
-            }
-        }
-
-        var txt = null;
-        if (dist < 100) {
-            txt = dist.format("%.1f");
-        } else {
-            txt = dist.format("%.0f");
-        }
-        txt += " "+unit;
-
-        return txt;
+        return BDIT.DistanceUtils.distToString(dist);
     }
 
     //! Calculates and returns the text for the heading.
@@ -133,29 +110,43 @@ class DataField extends Ui.SimpleDataField {
             Sys.println("  > "+heading.toString());
         }
 
-        if (USE_ANGLE) {
-            return heading.toLong().toString();
-        } else {
-            if (heading <= 22.5) {
-                return HEADING_N;
-            } else if (heading < 67.5) {
-                return HEADING_NE;
-            } else if (heading <= 112.5) {
-                return HEADING_E;
-            } else if (heading < 157.5) {
-                return HEADING_SE;
-            } else if (heading <= 202.5) {
-                return HEADING_S;
-            } else if (heading < 247.5) {
-                return HEADING_SW;
-            } else if (heading <= 292.5) {
-                return HEADING_W;
-            } else if (heading < 337.5) {
-                return HEADING_NW;
+        var txt = null;
+
+        if (Conf.USE_ANGLE) {
+            if (txt != null) {
+                txt += "/";
             } else {
-                return HEADING_N;
+                txt = "";
+            }
+            txt += heading.toLong().toString();
+        }
+        if (Conf.USE_LETTERS) {
+            if (txt != null) {
+                txt += "/";
+            } else {
+                txt = "";
+            }
+            if (heading <= 22.5) {
+                txt += HEADING_N;
+            } else if (heading < 67.5) {
+                txt += HEADING_NE;
+            } else if (heading <= 112.5) {
+                txt += HEADING_E;
+            } else if (heading < 157.5) {
+                txt += HEADING_SE;
+            } else if (heading <= 202.5) {
+                txt += HEADING_S;
+            } else if (heading < 247.5) {
+                txt += HEADING_SW;
+            } else if (heading <= 292.5) {
+                txt += HEADING_W;
+            } else if (heading < 337.5) {
+                txt += HEADING_NW;
+            } else {
+                txt += HEADING_N;
             }
         }
+        return txt;
     }
 }
 }
