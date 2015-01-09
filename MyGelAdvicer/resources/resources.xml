@@ -1,0 +1,6 @@
+<resources>
+    <string id="AppName">My Gel Advicer</string>
+    <string id="DataFieldLabel">Dist to next Gel</string>
+
+    <bitmap id="LauncherIcon" filename="images/launcher_icon.png" />
+</resources>
