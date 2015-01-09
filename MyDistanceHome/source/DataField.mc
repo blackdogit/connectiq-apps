@@ -118,7 +118,7 @@ class DataField extends Ui.SimpleDataField {
             } else {
                 txt = "";
             }
-            txt += heading.toLong().toString();
+            txt += heading.toLong().toString()+"°";
         }
         if (Conf.USE_LETTERS) {
             if (txt != null) {

@@ -1,5 +1,5 @@
 <resources>
-    <string id="AppName">Min afstand tilbage til start</string>
+    <string id="AppName">Afstand til start</string>
     <string id="DataFieldLabel">Afstand til start</string>
     
     <string id="N">N</string>
