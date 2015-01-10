@@ -10,6 +10,12 @@ Adds a new data field that basically is identical to "Saved Positions"->"Informa
 This does not require any additional information apart from what is currently (by 1.0.0) is
 available in Toybox.Activity.Info.
 
+Connect IQ Description
+-
+If you are running in the woods or if you are walking the dog, it is very nice to know how far you have back to the starting point - and very likely your house or your car.
+This small data field will continuously show the distance and direction to the starting point - e.g. the location where you started the current activity.
+
+
 Notes
 -----
 
