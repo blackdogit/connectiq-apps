@@ -1,4 +1,4 @@
-module MyNutritionPlan {
+module MyFuelAdvisor {
 using Toybox.Application as App;
 
 module Conf {
@@ -12,11 +12,15 @@ module Conf {
     //! From the configuration.
     var plan = [5];
 
-    const FACTOR = 100;
+    const FACTOR = 100.0;
     const LEAD_DIST = 50;
 }
 
-class App extends App.AppBase {
+class Application extends App.AppBase {
+    function initialize() {
+        Toybox.System.println("init");
+    }
+
     function onStart() {
         // NOP
     }
@@ -26,7 +30,8 @@ class App extends App.AppBase {
     }
 
     function getInitialView() {
-        return [ new DataField() ];
+        Toybox.System.println("gIV");
+        return 9; //[ new DataField() ];
     }
 }
 }

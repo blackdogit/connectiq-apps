@@ -1,6 +1,8 @@
 <resources>
-    <string id="AppName">My Gel Advicer</string>
-    <string id="DataFieldLabel">Dist to next Gel</string>
+    <string id="AppName">My Fuel Advisor</string>
+    <string id="DataFieldLabel">Dist to next fuel point</string>
+
+    <string id="FuelIn">Fuel in </string>
 
     <bitmap id="LauncherIcon" filename="images/launcher_icon.png" />
 </resources>

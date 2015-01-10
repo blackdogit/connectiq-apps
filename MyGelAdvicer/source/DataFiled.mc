@@ -1,11 +1,15 @@
-module MyNutritionPlan {
+module MyFuelAdvisor {
 using Toybox.System as Sys;
 using Toybox.WatchUi as Ui;
 using Toybox.Attention as Att;
 
+//! "Fuel In "
+const FuelIn =  Ui.loadResource(Rez.Strings.FuelIn);
+
 class DataField extends Ui.SimpleDataField {
     //! The distance units used
     function initialize() {
+        Sys.println("init");
         label = Ui.loadResource(Rez.Strings.DataFieldLabel);
     }
 
@@ -21,6 +25,9 @@ class DataField extends Ui.SimpleDataField {
     //! @returns [String]: the distance to the next nutrition point
     function compute(info) {
         var dist = info.elapsedDistance;
+        if (dist == null) {
+            return "---";
+        }
         Sys.println("dist="+dist+" next="+nextDistance);
         var du = Sys.getDeviceSettings().distanceUnits;
 
@@ -48,6 +55,7 @@ class DataField extends Ui.SimpleDataField {
         var delta = nextDistance-dist;
         Sys.println("delta="+delta);
 
+        var d = "";
         // If we are less than
         if (delta < Conf.LEAD_DIST) {
             if (!alerted) {
@@ -56,11 +64,11 @@ class DataField extends Ui.SimpleDataField {
                 //Att.vibrate(true);
                 //Att.playTone(Att.TONE_DISTANCE_ALERT);
             }
-            return "Eat Now!";
+            d += FuelIn;
         }
 
         // dist is now in the same units as plan...
-        var d = BDIT.DistanceUtils.distToString(delta);
+        d += BDIT.DistanceUtils.distToString(delta);
 
         return d;
     }

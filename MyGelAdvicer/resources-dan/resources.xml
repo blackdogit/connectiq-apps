@@ -1,0 +1,6 @@
+<resources>
+    <string id="AppName">mit brændstofsrådgiver</string>
+    <string id="DataFieldLabel">Afstand til næste mad punkt</string>
+
+    <string id="FuelIn">Mad om </string>
+</resources>
