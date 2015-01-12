@@ -4,12 +4,11 @@ using Toybox.WatchUi as Ui;
 using Toybox.Attention as Att;
 
 //! "Fuel In "
-const FuelIn =  Ui.loadResource(Rez.Strings.FuelIn);
 
 class DataField extends Ui.SimpleDataField {
+    const FuelIn = Ui.loadResource(Rez.Strings.FuelIn);
     //! The distance units used
     function initialize() {
-        Sys.println("init");
         label = Ui.loadResource(Rez.Strings.DataFieldLabel);
     }
 
@@ -28,7 +27,7 @@ class DataField extends Ui.SimpleDataField {
         if (dist == null) {
             return "---";
         }
-        Sys.println("dist="+dist+" next="+nextDistance);
+        //Sys.println("dist="+dist+" next="+nextDistance);
         var du = Sys.getDeviceSettings().distanceUnits;
 
 
@@ -45,7 +44,7 @@ class DataField extends Ui.SimpleDataField {
             }
 
             if (du == Sys.UNIT_STATUTE) {
-                deltaDistance *= 1.608;
+                //deltaDistance *= 1.608;
             }
             nextDistance += deltaDistance;
             alerted = false;
@@ -53,7 +52,7 @@ class DataField extends Ui.SimpleDataField {
 
         // How far to the next point?
         var delta = nextDistance-dist;
-        Sys.println("delta="+delta);
+        //Sys.println("delta="+delta);
 
         var d = "";
         // If we are less than

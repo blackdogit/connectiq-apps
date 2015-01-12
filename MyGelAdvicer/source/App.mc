@@ -12,15 +12,11 @@ module Conf {
     //! From the configuration.
     var plan = [5];
 
-    const FACTOR = 100.0;
-    const LEAD_DIST = 50;
+    const FACTOR = 1000.0;
+    const LEAD_DIST = 50.0;
 }
 
 class Application extends App.AppBase {
-    function initialize() {
-        Toybox.System.println("init");
-    }
-
     function onStart() {
         // NOP
     }
@@ -30,8 +26,7 @@ class Application extends App.AppBase {
     }
 
     function getInitialView() {
-        Toybox.System.println("gIV");
-        return 9; //[ new DataField() ];
+        return [ new DataField() ];
     }
 }
 }
