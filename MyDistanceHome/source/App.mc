@@ -2,7 +2,7 @@ module MyDistanceBack {
 using Toybox.Application as App;
 
 //! Whether we are debuggng
-const DEBUG = false;
+const DEBUG = true;
 
 module Conf {
     var USE_ANGLE = true;
