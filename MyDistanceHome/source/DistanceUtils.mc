@@ -1,5 +1,7 @@
 module BDIT {
 module DistanceUtils {
+    const VERSION = "1.0.0.20150218";
+
     using Toybox.System as Sys;
     using Toybox.Math;
 
