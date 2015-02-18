@@ -27,9 +27,10 @@ class DataField extends Ui.SimpleDataField {
         if (dist == null) {
             return "---";
         }
+        dist = dist.toFloat();
+
         //Sys.println("dist="+dist+" next="+nextDistance);
         var du = Sys.getDeviceSettings().distanceUnits;
-
 
         // Find the next distance point if needed
         while (dist > nextDistance) {
@@ -59,9 +60,14 @@ class DataField extends Ui.SimpleDataField {
         if (delta < Conf.LEAD_DIST) {
             if (!alerted) {
                 alerted = true;
+                var ds = Sys.getDeviceSettings();
                 //Att.backlight(true);
-                //Att.vibrate(true);
-                //Att.playTone(Att.TONE_DISTANCE_ALERT);
+                if (ds.vibrateOn) {
+                    Att.vibrate(true);
+                }
+                if (ds.tonesOn) {
+                    Att.playTone(Att.TONE_DISTANCE_ALERT);
+                }
             }
             d += FuelIn;
         }

@@ -1,5 +1,7 @@
 <resources>
     <string id="AppName">My Fuel Reminder</string>
+    <string id="Version">20150218</string>
+
     <string id="DataFieldLabel">Next fuel point</string>
 
     <string id="FuelIn">Fuel in </string>
