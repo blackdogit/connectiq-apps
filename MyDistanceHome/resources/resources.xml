@@ -1,17 +1,7 @@
 <resources>
     <string id="AppName">Distance to Start</string>
-    <string id="Version">20150217</string>
 
     <string id="DataFieldLabel">Distance to Start</string>
-    
-    <string id="N">N</string>
-    <string id="NE">NE</string>
-    <string id="E">E</string>
-    <string id="SE">SE</string>
-    <string id="S">S</string>
-    <string id="SW">SW</string>
-    <string id="W">W</string>
-    <string id="NW">NW</string>
 
     <bitmap id="LauncherIcon" filename="images/launcher_icon.png" />
 </resources>

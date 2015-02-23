@@ -1,6 +1,6 @@
 module BDIT {
 module DistanceUtils {
-    const VERSION = "1.0.0.20150218";
+    const VERSION = "1.0.1.20150221";
 
     using Toybox.System as Sys;
     using Toybox.Math;
@@ -8,7 +8,7 @@ module DistanceUtils {
     const NO_DATA = [null, null];
 
     //! The radius of earth in m
-    const RADIUS_EARTH = 6371000;
+    const RADIUS_EARTH = 6371000.0;
 
     //! 2 pi R/2 pi
 
@@ -25,10 +25,9 @@ module DistanceUtils {
         }
         // @type [lat, long]
         // Unfortunately I have to convert the results of toRadians to save memory :-(
-        var startLL = start.toRadians();
-        var startLat = startLL[0].toFloat();
-        var startLong = startLL[1].toFloat();
-        startLL = null;
+        var r = start.toRadians();
+        var startLat = r[0].toFloat();
+        var startLong = r[1].toFloat();
 
         //Sys.println("s="+startLat.toString()+" "+MCUtils.typeof(startLat));
         //Sys.println("pi="+Math.PI.toString()+" "+MCUtils.typeof(Math.PI));
@@ -37,10 +36,10 @@ module DistanceUtils {
         }
 
         // @type [lat, long]
-        var endLL = end.toRadians();
-        var endLat = endLL[0].toFloat();
-        var endLong = endLL[1].toFloat();
-        endLL = null;
+        r = end.toRadians();
+        var endLat = r[0].toFloat();
+        var endLong = r[1].toFloat();
+        r = null;
 
         // Vector from end to start
         var dlat = startLat-endLat;
