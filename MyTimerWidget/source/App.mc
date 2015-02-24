@@ -3,18 +3,25 @@ using Toybox.Application as App;
 using Toybox.System as Sys;
 
 class App extends App.AppBase {
-    //! onStart() is called on application start up
+    var timer;
+    var view;
+
     function onStart() {
-        // TODO: restore timerVal
+        timer = getProperty("timer");
+        if (timer == null) {
+            timer = "60";
+        }
     }
 
-    //! onStop() is called when your application is exiting
     function onStop() {
+        if (view != null) {
+            setProperty("timer", view.timerVal);
+        }
     }
 
-    //! Return the initial view of your application here
     function getInitialView() {
-        var view = new TopView();
+        view = new TopView();
+        view.timerVal = timer.toNumber();
         return [ view, new ViewInputDelegate(view) ];
     }
 }
