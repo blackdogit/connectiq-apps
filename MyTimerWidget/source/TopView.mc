@@ -1,4 +1,5 @@
 module MyTimerWidget {
+using Toybox.Application as App;
 using Toybox.WatchUi as UI;
 using Toybox.System as Sys;
 using Toybox.Attention as Att;
@@ -9,7 +10,7 @@ using Toybox.Time;
 
 class TopView extends UI.View {
     //! Timer in seconds
-    var timerVal;
+    var timerVal = 60;
     //! A one-shot for timerVal*1000
     var endTimer;
     //! 1-second repeating timer
@@ -26,6 +27,13 @@ class TopView extends UI.View {
 
     //! true if this view is shown - false otherwise
     var widgetShown = false;
+
+    function initialize() {
+        var v = App.getApp().getProperty("timer");
+        if (v != null) {
+            timerVal = v.toNumber();
+        }
+    }
 
     //! Load your resources here
     function onLayout(dc) {
@@ -65,7 +73,7 @@ class TopView extends UI.View {
             Att.playTone(Att.TONE_ALARM);
         }
         stop();
-        Sys.println("onEnd");
+        //Sys.println("onEnd");
     }
 
     function onUpdate(dc) {
@@ -91,14 +99,11 @@ class TopView extends UI.View {
     //! Called when this View is removed from the screen. Save the
     //! state of your app here.
     function onShow() {
-        Sys.println("onShow");
-
         widgetShown = true;
         updateSecondTimer();
     }
     function onHide() {
-        Sys.println("onHide");
-
+        App.getApp().setProperty("timer", timerVal);
         widgetShown = false;
         updateSecondTimer();
     }
@@ -108,7 +113,7 @@ class TopView extends UI.View {
         var sTWanted = startTime != null && widgetShown;
         if (secondTimerRunning == sTWanted) { return; }
         secondTimerRunning = sTWanted;
-        Sys.println("updateSecondTimer "+secondTimerRunning);
+        //Sys.println("updateSecondTimer "+secondTimerRunning);
         if (secondTimerRunning) {
             secondTimer.start(method(:onTick), 1000, true);
         } else {
@@ -117,7 +122,7 @@ class TopView extends UI.View {
     }
 
     function onTick() {
-        Sys.println("onTick");
+        //Sys.println("onTick");
 
         UI.requestUpdate();
     }
@@ -132,7 +137,7 @@ class ViewInputDelegate extends UI.BehaviorDelegate {
     }
 
     function onMenu() {
-        Sys.println("onMenu");
+        //Sys.println("onMenu");
 
         var menu = new UI.Menu();
         menu.setTitle("Timer");
@@ -162,7 +167,7 @@ class MenuInput extends UI.MenuInputDelegate {
         } else if(item == :stop) {
             view.stop();
         } else if(item == :set) {
-            Sys.println(":set");
+            //Sys.println(":set");
             var dur = Calendar.duration({:seconds => view.timerVal});
             var np = new UI.NumberPicker(UI.NUMBER_PICKER_TIME_OF_DAY, dur);
             UI.pushView(np, new SetTimeDelegate(view), UI.SLIDE_IMMEDIATE);
