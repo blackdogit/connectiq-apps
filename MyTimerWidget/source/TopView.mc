@@ -135,9 +135,10 @@ class ViewInputDelegate extends UI.BehaviorDelegate {
         Sys.println("onMenu");
 
         var menu = new UI.Menu();
+        menu.setTitle("Timer");
         if (view.startTime == null) {
             menu.addItem("Start", :start);
-            menu.addItem("Set timer", :set);
+            menu.addItem("Set time", :set);
         } else {
             menu.addItem("Stop!", :stop);
         }
