@@ -4,6 +4,7 @@ using Toybox.System as Sys;
 
 class App extends App.AppBase {
     function onStart() {
+        //clearProperties();
     }
 
     function onStop() {
@@ -12,6 +13,7 @@ class App extends App.AppBase {
     function getInitialView() {
         var view = new TopView();
         return [ view, new ViewInputDelegate(view) ];
+        return [ new BDIT.SplashScreen(view, new ViewInputDelegate(view)) ];
     }
 }
 }

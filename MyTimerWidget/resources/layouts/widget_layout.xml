@@ -1,3 +1,3 @@
-<layout id="MainLayout">
+<layout id="MainLayout" background="Gfx.COLOR_WHITE">
     <label id="myTime" x="center" y="center" color="Gfx.COLOR_WHITE" font="Gfx.FONT_NUMBER_HOT" justification="Gfx.TEXT_JUSTIFY_CENTER" />
 </layout>

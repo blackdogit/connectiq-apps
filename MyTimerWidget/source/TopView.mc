@@ -77,23 +77,24 @@ class TopView extends UI.View {
     }
 
     function onUpdate(dc) {
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+        dc.clear();
+
         var val = timerVal;
         if (startTime != null) {
             var now = Time.now().value();
             val = timerVal-(now-startTime);
-            timerTxt.setColor(Gfx.COLOR_DK_RED);
-        } else {
-            timerTxt.setColor(Gfx.COLOR_WHITE);
-            //timerTxt.setText("---");
+            dc.setColor(Graphics.COLOR_DK_RED, Graphics.COLOR_WHITE);
         }
         var seconds = val%60;
         val = val/60;
         var minutes = val%60;
         var hours = val/60;
         var txt = Lang.format("$1$:$2$:$3$", [hours.format("%02d"),minutes.format("%02d"),seconds.format("%02d")]);
-        timerTxt.setText(txt);
 
-        View.onUpdate(dc);
+        dc.drawText(dc.getWidth()/2, dc.getHeight()/2,
+            Graphics.FONT_NUMBER_HOT, txt,
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
     //! Called when this View is removed from the screen. Save the

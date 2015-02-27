@@ -48,44 +48,65 @@
 <entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="73" pc="268436490" symbol="onEnd"/>
 <entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="75" pc="268436521" symbol="onEnd"/>
 <entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="80" pc="268436536" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="81" pc="268436546" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="82" pc="268436559" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="83" pc="268436585" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="84" pc="268436607" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="86" pc="268436640" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="89" pc="268436670" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="90" pc="268436680" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="91" pc="268436690" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="92" pc="268436700" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="93" pc="268436710" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="94" pc="268436812" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="96" pc="268436832" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="102" pc="268436855" symbol="onShow"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="103" pc="268436865" symbol="onShow"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="106" pc="268436880" symbol="onHide"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="107" pc="268436918" symbol="onHide"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="108" pc="268436928" symbol="onHide"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="113" pc="268436943" symbol="updateSecondTimer"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="114" pc="268436969" symbol="updateSecondTimer"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="114" pc="268436983" symbol="updateSecondTimer"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="115" pc="268436987" symbol="updateSecondTimer"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="117" pc="268436997" symbol="updateSecondTimer"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="118" pc="268437008" symbol="updateSecondTimer"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="120" pc="268437052" symbol="updateSecondTimer"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="127" pc="268437073" symbol="onTick"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="18" pc="268437513" symbol="&lt;init&gt;"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="21" pc="268437523" symbol="&lt;init&gt;"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="29" pc="268437532" symbol="&lt;init&gt;"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/App.mc" lineNum="13" pc="268437098" symbol="getInitialView"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/App.mc" lineNum="14" pc="268437122" symbol="getInitialView"/>
-<entry filename="Rez" lineNum="5" pc="268437575" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="10" pc="268437562" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="19" pc="268437175" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="20" pc="268437189" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="21" pc="268437286" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="22" pc="268437301" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="23" pc="268437353" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="24" pc="268437399" symbol="MainLayout"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="81" pc="268436576" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="83" pc="268436588" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="84" pc="268436598" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="85" pc="268436611" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="86" pc="268436637" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="87" pc="268436659" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="89" pc="268436702" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="90" pc="268436712" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="91" pc="268436722" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="92" pc="268436732" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="93" pc="268436742" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="95" pc="268436844" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="103" pc="268436938" symbol="onShow"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="104" pc="268436948" symbol="onShow"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="107" pc="268436963" symbol="onHide"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="108" pc="268437001" symbol="onHide"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="109" pc="268437011" symbol="onHide"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="114" pc="268437026" symbol="updateSecondTimer"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="115" pc="268437052" symbol="updateSecondTimer"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="115" pc="268437066" symbol="updateSecondTimer"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="116" pc="268437070" symbol="updateSecondTimer"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="118" pc="268437080" symbol="updateSecondTimer"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="119" pc="268437091" symbol="updateSecondTimer"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="121" pc="268437135" symbol="updateSecondTimer"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="128" pc="268437156" symbol="onTick"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="18" pc="268438538" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="21" pc="268438548" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/TopView.mc" lineNum="29" pc="268438557" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/SplashScreen.mc" lineNum="19" pc="268437175" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/SplashScreen.mc" lineNum="20" pc="268437185" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/SplashScreen.mc" lineNum="21" pc="268437195" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/SplashScreen.mc" lineNum="22" pc="268437229" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/SplashScreen.mc" lineNum="23" pc="268437241" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/SplashScreen.mc" lineNum="25" pc="268437245" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/SplashScreen.mc" lineNum="27" pc="268437280" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/SplashScreen.mc" lineNum="29" pc="268437308" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/SplashScreen.mc" lineNum="35" pc="268437349" symbol="onLayout"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/SplashScreen.mc" lineNum="39" pc="268437395" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/SplashScreen.mc" lineNum="40" pc="268437435" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/SplashScreen.mc" lineNum="42" pc="268437447" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/SplashScreen.mc" lineNum="44" pc="268437501" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/SplashScreen.mc" lineNum="45" pc="268437541" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/SplashScreen.mc" lineNum="49" pc="268437697" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/SplashScreen.mc" lineNum="50" pc="268437737" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/SplashScreen.mc" lineNum="53" pc="268437899" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/SplashScreen.mc" lineNum="59" pc="268438001" symbol="toView"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/App.mc" lineNum="14" pc="268438054" symbol="getInitialView"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/App.mc" lineNum="15" pc="268438078" symbol="getInitialView"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyTimerWidget/source/App.mc" lineNum="16" pc="268438127" symbol="getInitialView"/>
+<entry filename="Rez" lineNum="5" pc="268438609" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="6" pc="268438618" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="11" pc="268438587" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="12" pc="268438596" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="21" pc="268438200" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="22" pc="268438214" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="23" pc="268438311" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="24" pc="268438326" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="25" pc="268438378" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="26" pc="268438424" symbol="MainLayout"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8389359" symbol="&lt;gre&gt;"/>
@@ -97,6 +118,7 @@
 <entry field="true" id="8388906" symbol="MOVE_BAR_LEVEL_MAX"/>
 <entry field="true" id="8388737" symbol="calories"/>
 <entry field="true" id="8389205" symbol="MSG_ID_CHANNEL_TRANSMIT_POWER"/>
+<entry id="9" module="true" symbol="globals_BDIT"/>
 <entry id="8389060" object="true" symbol="Text"/>
 <entry id="8389051" method="true" symbol="switchToView"/>
 <entry id="8388638" module="true" symbol="ActivityRecording"/>
@@ -113,12 +135,12 @@
 <entry field="true" id="8389055" symbol="POP_VIEW"/>
 <entry id="8389316" symbol="radians"/>
 <entry field="true" id="8388738" symbol="currentSpeed"/>
-<entry field="true" id="15" symbol="view"/>
+<entry field="true" id="17" symbol="view"/>
 <entry id="8389085" symbol="mDisplayString"/>
 <entry id="8388676" method="true" symbol="testTypeCreation"/>
 <entry field="true" id="8388852" symbol="SUB_SPORT_STREET"/>
 <entry id="8388910" method="true" symbol="getHistory"/>
-<entry id="11" object="true" symbol="MenuInput"/>
+<entry id="13" object="true" symbol="MenuInput"/>
 <entry id="3" module="true" symbol="globals_Rez"/>
 <entry field="true" id="8389002" symbol="KEY_RIGHT"/>
 <entry field="true" id="8389163" symbol="COLOR_ORANGE"/>
@@ -129,12 +151,13 @@
 <entry id="8389358" symbol="&lt;deu&gt;"/>
 <entry field="true" id="8388807" symbol="BLE_REQUEST_TOO_LARGE"/>
 <entry id="8388819" method="true" symbol="makeImageRequest"/>
-<entry id="26" module="true" symbol="Menus"/>
+<entry id="28" module="true" symbol="Menus"/>
 <entry id="4" module="true" symbol="globals_Rez_Drawables"/>
 <entry id="8388630" module="true" symbol="Toybox_Position"/>
 <entry id="8389354" symbol="&lt;dut&gt;"/>
-<entry id="9" module="true" symbol="MyTimerWidget"/>
+<entry id="10" module="true" symbol="MyTimerWidget"/>
 <entry id="8388821" method="true" symbol="getMailbox"/>
+<entry id="40" method="true" symbol="toView"/>
 <entry id="8388957" method="true" symbol="enableSensorEvents"/>
 <entry field="true" id="8388811" symbol="INVALID_HTTP_BODY_IN_REQUEST"/>
 <entry field="true" id="8388750" symbol="currentCadence"/>
@@ -155,7 +178,7 @@
 <entry id="8388678" method="true" symbol="testBooleanOperations"/>
 <entry id="8389027" object="true" symbol="Menu"/>
 <entry id="8389364" symbol="&lt;pol&gt;"/>
-<entry field="true" id="21" symbol="timerTxt"/>
+<entry field="true" id="23" symbol="timerTxt"/>
 <entry id="8389306" symbol="lon"/>
 <entry field="true" id="8389035" symbol="NUMBER_PICKER_TIME_MIN_SEC"/>
 <entry id="8389023" object="true" symbol="View"/>
@@ -171,7 +194,7 @@
 <entry id="8388659" method="true" symbol="testAbs"/>
 <entry field="true" id="8388989" symbol="dutyCycle"/>
 <entry id="8389043" object="true" symbol="ProgressBar"/>
-<entry field="true" id="30" symbol="AppName"/>
+<entry field="true" id="34" symbol="AppName"/>
 <entry field="true" id="8388927" symbol="SECONDS_PER_YEAR"/>
 <entry id="8389114" method="true" symbol="getType"/>
 <entry id="8389032" object="true" symbol="ConfirmationDelegate"/>
@@ -184,7 +207,7 @@
 <entry id="8389184" method="true" symbol="drawLine"/>
 <entry id="8389250" symbol="timestamp"/>
 <entry id="8388877" method="true" symbol="createSession"/>
-<entry field="true" id="28" symbol="LauncherIcon"/>
+<entry field="true" id="30" symbol="LauncherIcon"/>
 <entry id="8388616" module="true" symbol="Toybox_Communications"/>
 <entry field="true" id="8389380" symbol="OBSCURE_TOP"/>
 <entry field="true" id="8389201" symbol="MSG_ID_SEARCH_TIMEOUT"/>
@@ -192,7 +215,7 @@
 <entry id="8388649" module="true" symbol="Test"/>
 <entry field="true" id="8388837" symbol="SPORT_SOCCER"/>
 <entry field="true" id="8388958" symbol="speed"/>
-<entry id="25" method="true" symbol="onTick"/>
+<entry id="27" method="true" symbol="onTick"/>
 <entry id="8388887" symbol="mData"/>
 <entry field="true" id="8389289" symbol="GEO_DEG"/>
 <entry id="8388926" symbol="dayHash"/>
@@ -230,6 +253,7 @@
 <entry id="8388699" method="true" symbol="stop"/>
 <entry field="true" id="8388855" symbol="SUB_SPORT_SPIN"/>
 <entry id="8388668" method="true" symbol="testBitwiseOr"/>
+<entry id="36" object="true" symbol="SplashScreen"/>
 <entry id="8389320" symbol="february"/>
 <entry field="true" id="8388838" symbol="SPORT_TENNIS"/>
 <entry field="true" id="8388961" symbol="power"/>
@@ -279,7 +303,7 @@
 <entry id="8389188" method="true" symbol="fillRectangle"/>
 <entry id="8389142" method="true" symbol="getProfile"/>
 <entry id="8388729" object="true" symbol="Info"/>
-<entry id="27" module="true" symbol="Layouts"/>
+<entry id="29" module="true" symbol="Layouts"/>
 <entry id="8388710" object="true" symbol="Stats"/>
 <entry field="true" id="8389152" symbol="FONT_XTINY"/>
 <entry id="8389189" method="true" symbol="fillRoundedRectangle"/>
@@ -315,7 +339,7 @@
 <entry id="8388767" object="true" symbol="Method"/>
 <entry field="true" id="8388994" symbol="KEY_ENTER"/>
 <entry field="true" id="8389264" symbol="DEFAULT_TRANSMISSION_TYPE"/>
-<entry id="12" object="true" symbol="SetTimeDelegate"/>
+<entry id="14" object="true" symbol="SetTimeDelegate"/>
 <entry field="true" id="8389005" symbol="KEY_UP_RIGHT"/>
 <entry field="true" id="8388726" symbol="freeMemory"/>
 <entry id="8389079" method="true" symbol="onPreviousPage"/>
@@ -329,7 +353,7 @@
 <entry id="8388672" method="true" symbol="testLessThan"/>
 <entry id="8388824" method="true" symbol="transmit"/>
 <entry field="true" id="8389170" symbol="COLOR_PINK"/>
-<entry field="true" id="16" symbol="timerVal"/>
+<entry field="true" id="18" symbol="timerVal"/>
 <entry id="8" module="true" symbol="globals_Rez_Strings"/>
 <entry id="8388884" object="true" symbol="GeometryIterator"/>
 <entry id="8388716" method="true" symbol="trap"/>
@@ -342,6 +366,7 @@
 <entry id="8389129" symbol="mJustification"/>
 <entry id="8389327" symbol="september"/>
 <entry id="8389132" method="true" symbol="setFont"/>
+<entry id="39" symbol="logo"/>
 <entry field="true" id="8389039" symbol="NUMBER_PICKER_CALORIES"/>
 <entry field="true" id="8388968" symbol="TONE_STOP"/>
 <entry field="true" id="8389244" symbol="deviceNumber"/>
@@ -351,9 +376,9 @@
 <entry id="8389259" method="true" symbol="sendAcknowledge"/>
 <entry field="true" id="8389159" symbol="COLOR_DK_GRAY"/>
 <entry id="8389375" object="true" symbol="WatchFace"/>
-<entry id="24" method="true" symbol="updateSecondTimer"/>
+<entry id="26" method="true" symbol="updateSecondTimer"/>
 <entry field="true" id="8388911" symbol="distance"/>
-<entry field="true" id="22" symbol="widgetShown"/>
+<entry field="true" id="24" symbol="widgetShown"/>
 <entry id="8389391" method="true" symbol="testArray"/>
 <entry field="true" id="8388724" symbol="battery"/>
 <entry id="8388948" method="true" symbol="multiply"/>
@@ -376,7 +401,7 @@
 <entry id="8389305" symbol="lat"/>
 <entry id="8389235" object="true" symbol="GenericChannel"/>
 <entry field="true" id="8389158" symbol="COLOR_LT_GRAY"/>
-<entry id="23" method="true" symbol="onEnd"/>
+<entry id="25" method="true" symbol="onEnd"/>
 <entry field="true" id="8389240" symbol="messageId"/>
 <entry id="8389241" symbol="dataLow"/>
 <entry id="8389366" symbol="&lt;rus&gt;"/>
@@ -421,7 +446,7 @@
 <entry field="true" id="8388940" symbol="year"/>
 <entry field="true" id="8388723" symbol="timeZoneOffset"/>
 <entry field="true" id="8389272" symbol="searchTimeoutLowPriority"/>
-<entry field="true" id="17" symbol="endTimer"/>
+<entry field="true" id="19" symbol="endTimer"/>
 <entry field="true" id="8388983" symbol="TONE_LOW_BATTERY"/>
 <entry id="8389178" method="true" symbol="drawCircle"/>
 <entry id="8389281" method="true" symbol="onStop"/>
@@ -429,6 +454,7 @@
 <entry id="8388789" method="true" symbol="get"/>
 <entry id="8389334" symbol="wednesday"/>
 <entry field="true" id="8389046" symbol="SLIDE_RIGHT"/>
+<entry field="true" id="31" symbol="Logo32x32"/>
 <entry field="true" id="8389065" symbol="locY"/>
 <entry field="true" id="8388984" symbol="TONE_ERROR"/>
 <entry field="true" id="8389064" symbol="locX"/>
@@ -474,6 +500,7 @@
 <entry id="8388778" symbol="mClass"/>
 <entry id="8388934" method="true" symbol="momentNative"/>
 <entry field="true" id="8389000" symbol="KEY_DOWN_RIGHT"/>
+<entry id="37" symbol="myMainView"/>
 <entry id="8388641" module="true" symbol="Math"/>
 <entry field="true" id="8388800" symbol="UNKNOWN_ERROR"/>
 <entry id="8388760" object="true" symbol="Float"/>
@@ -499,7 +526,7 @@
 <entry field="true" id="8389300" symbol="LOCATION_ONE_SHOT"/>
 <entry id="8388717" method="true" symbol="exit"/>
 <entry id="8388949" method="true" symbol="divide"/>
-<entry id="13" object="true" symbol="TopView"/>
+<entry id="15" object="true" symbol="TopView"/>
 <entry field="true" id="8388971" symbol="TONE_ALERT_LO"/>
 <entry id="8389113" method="true" symbol="getCoordinates"/>
 <entry id="8389352" symbol="&lt;ces&gt;"/>
@@ -513,6 +540,7 @@
 <entry id="8389256" method="true" symbol="open"/>
 <entry id="8388653" method="true" symbol="testGeometryIterator"/>
 <entry field="true" id="8389063" symbol="identifier"/>
+<entry field="true" id="35" symbol="SPLASH_TIMEOUT"/>
 <entry id="7" module="true" symbol="globals_Rez_Layouts"/>
 <entry field="true" id="8389219" symbol="MSG_CODE_EVENT_TRANSFER_RX_FAILED"/>
 <entry id="8389349" symbol="justification"/>
@@ -538,7 +566,7 @@
 <entry id="8388712" method="true" symbol="print"/>
 <entry field="true" id="8388695" symbol="count2"/>
 <entry field="true" id="8388694" symbol="count1"/>
-<entry field="true" id="19" symbol="secondTimerRunning"/>
+<entry field="true" id="21" symbol="secondTimerRunning"/>
 <entry id="8389360" symbol="&lt;hun&gt;"/>
 <entry id="8388931" symbol="getMonthHash"/>
 <entry field="true" id="8389146" symbol="sleepTime"/>
@@ -680,9 +708,11 @@
 <entry id="8389313" symbol="aMethod"/>
 <entry field="true" id="8388866" symbol="SUB_SPORT_STAIR_CLIMBING"/>
 <entry field="true" id="8388805" symbol="BLE_REQUEST_CANCELLED"/>
+<entry id="38" symbol="myMainDelegate"/>
 <entry id="8388776" method="true" symbol="toDouble"/>
 <entry id="8388825" object="true" symbol="ConnectionListener"/>
 <entry id="8388698" method="true" symbol="start"/>
+<entry field="true" id="33" symbol="Version"/>
 <entry field="true" id="8388813" symbol="NETWORK_REQUEST_TIMED_OUT"/>
 <entry id="8389323" symbol="may"/>
 <entry field="true" id="8388930" symbol="SECONDS_PER_MINUTE"/>
@@ -706,7 +736,7 @@
 <entry field="true" id="8388812" symbol="INVALID_HTTP_METHOD_IN_REQUEST"/>
 <entry id="8389182" method="true" symbol="drawRoundedRectangle"/>
 <entry field="true" id="8389297" symbol="QUALITY_GOOD"/>
-<entry id="29" method="true" symbol="MainLayout"/>
+<entry id="32" method="true" symbol="MainLayout"/>
 <entry field="true" id="8389228" symbol="MSG_CODE_EVENT_QUE_OVERFLOW"/>
 <entry field="true" id="8388832" symbol="SPORT_CYCLING"/>
 <entry field="true" id="8389001" symbol="KEY_LEFT"/>
@@ -817,9 +847,9 @@
 <entry id="8389309" method="true" symbol="toGeoString"/>
 <entry id="8388690" method="true" symbol="testMoment"/>
 <entry id="8389024" object="true" symbol="DataField"/>
-<entry id="31" symbol="set"/>
+<entry id="41" symbol="set"/>
 <entry id="8389062" symbol="mInitialValue"/>
-<entry id="10" object="true" symbol="ViewInputDelegate"/>
+<entry id="12" object="true" symbol="ViewInputDelegate"/>
 <entry field="true" id="8388991" symbol="KEY_LIGHT"/>
 <entry field="true" id="8389139" symbol="GENDER_FEMALE"/>
 <entry field="true" id="8389245" symbol="deviceType"/>
@@ -880,7 +910,7 @@
 <entry field="true" id="8388749" symbol="maxHeartRate"/>
 <entry id="8389181" method="true" symbol="drawRectangle"/>
 <entry field="true" id="8389403" symbol="paceUnits"/>
-<entry id="14" object="true" symbol="App"/>
+<entry id="16" object="true" symbol="App"/>
 <entry id="8389341" symbol="days"/>
 <entry field="true" id="8388977" symbol="TONE_CANARY"/>
 <entry field="true" id="8388919" symbol="FORMAT_LONG"/>
@@ -891,6 +921,7 @@
 <entry id="8389340" symbol="years"/>
 <entry field="true" id="8389388" symbol="FONT_NUMBER_THAI_HOT"/>
 <entry id="8389351" symbol="&lt;valyrian&gt;"/>
+<entry id="11" module="true" symbol="BDIT"/>
 <entry field="true" id="8389402" symbol="distanceUnits"/>
 <entry id="8388764" method="true" symbol="format"/>
 <entry id="8389021" method="true" symbol="loadResource"/>
@@ -899,10 +930,10 @@
 <entry id="8389321" symbol="march"/>
 <entry id="8388640" module="true" symbol="Lang"/>
 <entry id="8389333" symbol="tuesday"/>
-<entry field="true" id="20" symbol="timerIcon"/>
+<entry field="true" id="22" symbol="timerIcon"/>
 <entry field="true" id="8389018" symbol="SWIPE_LEFT"/>
 <entry id="8388682" method="true" symbol="testNaN"/>
-<entry field="true" id="18" symbol="secondTimer"/>
+<entry field="true" id="20" symbol="secondTimer"/>
 <entry field="true" id="8389029" symbol="CONFIRM_NO"/>
 <entry id="8389125" method="true" symbol="onHide"/>
 <entry field="true" id="8388719" symbol="dst"/>
@@ -968,6 +999,22 @@
 <documentation><![CDATA[<div class="description"> Starts and stops secondTimer as needed<br/></div>]]></documentation>
 </functionEntry>
 <functionEntry name="onTick">
+<documentation/>
+</functionEntry>
+<functionEntry name="initialize">
+<param id="mainView"/>
+<param id="mainDelegate"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="onLayout">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="onUpdate">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="toView">
 <documentation/>
 </functionEntry>
 <functionEntry name="onStart">

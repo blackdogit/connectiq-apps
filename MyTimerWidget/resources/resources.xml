@@ -1,5 +1,7 @@
 <resources>
-    <string id="AppName">My Timer Widget</string>
+    <string id="AppName">My Timer</string>
+    <string id="Version">20150227</string>
 
     <bitmap id="LauncherIcon" filename="images/launcher_icon.png" />
+	<bitmap id="Logo32x32" filename="images/logo32x32.png" />
 </resources>
