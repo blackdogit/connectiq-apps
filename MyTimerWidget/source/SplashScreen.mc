@@ -36,17 +36,17 @@ class SplashScreen extends UI.View {
     }
 
     function onUpdate(dc) {
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_WHITE);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         dc.clear();
 
         dc.drawBitmap(0, dc.getHeight()-logo.getHeight(), logo);
 
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_WHITE);
         dc.drawText(dc.getWidth()/2, dc.getHeight()/2-dc.getFontHeight(Graphics.FONT_LARGE)/2,
             Graphics.FONT_LARGE, UI.loadResource(Rez.Strings.AppName),
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
-        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_WHITE);
+        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_BLACK);
         dc.drawText(dc.getWidth()/2+20, dc.getHeight()/2+dc.getFontHeight(Graphics.FONT_LARGE)/2,
             Graphics.FONT_MEDIUM, UI.loadResource(Rez.Strings.Version),
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);

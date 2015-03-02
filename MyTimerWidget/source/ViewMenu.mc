@@ -9,15 +9,17 @@ using Toybox.Timer;
 using Toybox.Time;
 
 //! Behavior for TopView
-class ViewInputDelegate extends UI.BehaviorDelegate {
+class ViewInputDelegate extends UI.InputDelegate {
     var view;
 
     function initialize(view) {
         self.view = view;
     }
 
-    function onMenu() {
-        //Sys.println("onMenu");
+    function onKey(evt) {
+        var key = evt.getKey();
+        Sys.println("onKey("+key+")");
+        if (key != UI.KEY_MENU && key != UI.KEY_ENTER) { return false; }
 
         var menu = new UI.Menu();
         menu.setTitle("Timer");
