@@ -29,6 +29,7 @@ class ViewInputDelegate extends UI.InputDelegate {
         } else {
             menu.addItem("Stop!", :stop);
         }
+        menu.addItem("Show version", :showVersion);
         UI.pushView(menu, new MenuInput(view), SLIDE_IMMEDIATE);
 
         return true;
@@ -53,6 +54,9 @@ class MenuInput extends UI.MenuInputDelegate {
             var dur = Calendar.duration({:seconds => view.timerVal});
             var np = new UI.NumberPicker(UI.NUMBER_PICKER_TIME_OF_DAY, dur);
             UI.pushView(np, new SetTimeDelegate(view), UI.SLIDE_IMMEDIATE);
+        } else if(item == :showVersion) {
+            //Sys.println(":showVersion");
+            BDIT.Splash.splashUnconditionally();
         }
     }
 }

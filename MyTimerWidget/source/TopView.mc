@@ -77,14 +77,14 @@ class TopView extends UI.View {
     }
 
     function onUpdate(dc) {
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         dc.clear();
 
         var val = timerVal;
         if (startTime != null) {
             var now = Time.now().value();
             val = timerVal-(now-startTime);
-            dc.setColor(Graphics.COLOR_DK_RED, Graphics.COLOR_WHITE);
+            dc.setColor(Graphics.COLOR_DK_RED, Graphics.COLOR_BLACK);
         }
         var seconds = val%60;
         val = val/60;
@@ -92,6 +92,9 @@ class TopView extends UI.View {
         var hours = val/60;
         var txt = Lang.format("$1$:$2$:$3$", [hours.format("%02d"),minutes.format("%02d"),seconds.format("%02d")]);
 
+        dc.drawText(dc.getWidth()/2, 0,
+            Graphics.FONT_TINY, "Timer",
+            Graphics.TEXT_JUSTIFY_CENTER);
         dc.drawText(dc.getWidth()/2, dc.getHeight()/2,
             Graphics.FONT_NUMBER_HOT, txt,
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
