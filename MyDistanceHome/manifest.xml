@@ -2,13 +2,17 @@
     <iq:application entry="MyDistanceBack.Application" id="085D6DBCCB204467BBF7A04CBE9B7FF1" launcherIcon="LauncherIcon" name="AppName" type="datafield">
 
         <iq:products>
+            <iq:product id="vivoactive"/>
             <iq:product id="fenix3"/>
             <iq:product id="fr920xt"/>
+            <iq:product id="epix"/>
         </iq:products>
 
         <iq:permissions/>
 
         <iq:languages>
+            <iq:language>dan</iq:language>
+            <iq:language>eng</iq:language>
         </iq:languages>
 
     </iq:application>

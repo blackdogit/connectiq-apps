@@ -1,5 +1,6 @@
 <resources>
     <string id="AppName">Distance to Start</string>
+    <string id="Version">20150306</string>
 
     <string id="DataFieldLabel">Distance to Start</string>
 
