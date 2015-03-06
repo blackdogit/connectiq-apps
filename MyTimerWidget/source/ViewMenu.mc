@@ -18,18 +18,18 @@ class ViewInputDelegate extends UI.InputDelegate {
 
     function onKey(evt) {
         var key = evt.getKey();
-        Sys.println("onKey("+key+")");
+        //Sys.println("onKey("+key+")");
         if (key != UI.KEY_MENU && key != UI.KEY_ENTER) { return false; }
 
         var menu = new UI.Menu();
-        menu.setTitle("Timer");
+        menu.setTitle(UI.loadResource(Rez.Strings.MenuTitle));
         if (view.startTime == null) {
-            menu.addItem("Start", :start);
-            menu.addItem("Set time", :set);
+            menu.addItem(UI.loadResource(Rez.Strings.MenuStart), :start);
+            menu.addItem(UI.loadResource(Rez.Strings.MenuSet), :set);
         } else {
-            menu.addItem("Stop!", :stop);
+            menu.addItem(UI.loadResource(Rez.Strings.MenuStop), :stop);
         }
-        menu.addItem("Show version", :showVersion);
+        menu.addItem(UI.loadResource(Rez.Strings.MenuVersion), :showVersion);
         UI.pushView(menu, new MenuInput(view), SLIDE_IMMEDIATE);
 
         return true;

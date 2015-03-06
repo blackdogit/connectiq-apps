@@ -4,7 +4,7 @@ using Toybox.System as Sys;
 
 class App extends App.AppBase {
     function onStart() {
-        clearProperties();
+        //clearProperties();
     }
 
     function onStop() {
