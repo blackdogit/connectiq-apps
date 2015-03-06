@@ -57,7 +57,7 @@ class DataField extends UI.DataField {
             dc.clear();
             var size = w;
             if (h < w) { size = h; }
-            drawArrow(dc, heading/180*Math.PI-currentHeading, size*.40, wc, hc);
+            BDIT.DrawUtils.drawArrow(dc, heading/180*Math.PI-currentHeading, size*.40, G.COLOR_DK_GREEN, wc, hc);
         }
 
         // Field Label
@@ -83,27 +83,6 @@ class DataField extends UI.DataField {
         }
 
         return fonts[0];
-    }
-
-    //! Definition of an arrow.
-    //! Array with the point of the arrow, where each point is expressed as
-    //! [radius, angle(radians)]
-    var arrow = [[1.0, 0.0], [0.8, Math.PI.toFloat()*0.8], [0.4, Math.PI.toFloat()], [0.8, -Math.PI.toFloat()*0.8]];
-
-    //! Draws an arrow that points in the specied direction
-    function drawArrow(dc, heading, size, x, y) {
-        //Sys.println("drawArrow(dc, "+heading+", "+size+", "+x+", "+y+")");
-        var points = new[arrow.size()];
-
-        for (var i = 0; i < arrow.size(); i++) {
-            points[i] = [(x+size*arrow[i][0]*Math.sin(heading+arrow[i][1])).toNumber(),
-                         (y-size*arrow[i][0]*Math.cos(heading+arrow[i][1])).toNumber()];
-            //Sys.println("    "+i+": ["+points[i][0]+";"+points[i][1]+"]");
-        }
-
-        dc.setColor(G.COLOR_DK_GREEN, G.COLOR_TRANSPARENT);
-        dc.fillPolygon(points);
-        //Sys.println("<<dA");
     }
 
     //! Calculates and returns the text for the heading.
