@@ -2,7 +2,8 @@
     <iq:application entry="MyDistanceBack.Application" id="085D6DBCCB204467BBF7A04CBE9B7FF1" launcherIcon="LauncherIcon" name="AppName" type="datafield">
 
         <iq:products>
-            <iq:product id="fr920xt" partNumber="006-B1765-00"/>
+            <iq:product id="fenix3"/>
+            <iq:product id="fr920xt"/>
         </iq:products>
 
         <iq:permissions/>
