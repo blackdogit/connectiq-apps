@@ -12,8 +12,7 @@ class App extends App.AppBase {
 
     function getInitialView() {
         var view = new TopView();
-        return [ view, new ViewInputDelegate(view) ];
-        //return BDIT.Splash.splashIfNeeded(view, new ViewInputDelegate(view));
+        return BDIT.Splash.splashIfNeeded(view, new ViewInputDelegate(view));
     }
 }
 }

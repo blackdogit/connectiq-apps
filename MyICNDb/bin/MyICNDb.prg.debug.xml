@@ -81,10 +81,10 @@
 <entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/App.mc" lineNum="7" pc="268437570" symbol="onStart"/>
 <entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/App.mc" lineNum="14" pc="268437588" symbol="getInitialView"/>
 <entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/App.mc" lineNum="15" pc="268437612" symbol="getInitialView"/>
-<entry filename="Rez" lineNum="5" pc="268437705" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="6" pc="268437714" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="11" pc="268437683" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="12" pc="268437692" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="5" pc="268437706" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="6" pc="268437715" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="11" pc="268437684" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="12" pc="268437693" symbol="&lt;init&gt;"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8389359" symbol="&lt;gre&gt;"/>
