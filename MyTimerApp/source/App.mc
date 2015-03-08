@@ -4,7 +4,8 @@ using Toybox.System as Sys;
 
 class App extends App.AppBase {
     function onStart() {
-        clearProperties();
+        //clearProperties();
+        Sys.println("BDIT.Splash.Version="+BDIT.Splash.VERSION);
     }
 
     function onStop() {

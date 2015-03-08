@@ -4,8 +4,9 @@ module Splash {
     using Toybox.System as Sys;
     using Toybox.Application as App;
     using Toybox.Timer as Timer;
+    using Toybox.Graphics as G;
 
-    const VERSION = "1.0.0.20150305";
+    const VERSION = "1.0.0.20150308";
 
     const SPLASH_TIMEOUT = 3000;
 
@@ -59,22 +60,22 @@ module Splash {
         }
 
         function onUpdate(dc) {
-            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+            dc.setColor(G.COLOR_WHITE, G.COLOR_DK_GRAY);
             dc.clear();
 
             dc.drawBitmap(0, dc.getHeight()-logo.getHeight(), logo);
 
-            dc.drawText(dc.getWidth()/2, dc.getHeight()/2-dc.getFontHeight(Graphics.FONT_LARGE)/2,
-                Graphics.FONT_LARGE, UI.loadResource(Rez.Strings.AppName),
-                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+            dc.drawText(dc.getWidth()/2, dc.getHeight()/2-dc.getFontHeight(G.FONT_LARGE)/2,
+                G.FONT_LARGE, UI.loadResource(Rez.Strings.AppName),
+                G.TEXT_JUSTIFY_CENTER | G.TEXT_JUSTIFY_VCENTER);
 
-            dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_BLACK);
-            dc.drawText(dc.getWidth()/2+30, dc.getHeight()/2+dc.getFontHeight(Graphics.FONT_TINY)/2+4,
-                Graphics.FONT_TINY, "v. "+UI.loadResource(Rez.Strings.Version),
-                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-            dc.drawText(dc.getWidth()-10, dc.getHeight()-dc.getFontHeight(Graphics.FONT_SMALL),
-                Graphics.FONT_SMALL, "by Black Dog IT",
-                Graphics.TEXT_JUSTIFY_RIGHT);
+            dc.setColor(G.COLOR_LT_GRAY, G.COLOR_DK_GRAY);
+            dc.drawText(dc.getWidth()/2+30, dc.getHeight()/2+dc.getFontHeight(G.FONT_TINY)/2+4,
+                G.FONT_TINY, "v. "+UI.loadResource(Rez.Strings.Version),
+                G.TEXT_JUSTIFY_CENTER | G.TEXT_JUSTIFY_VCENTER);
+            dc.drawText(dc.getWidth()-10, dc.getHeight()-dc.getFontHeight(G.FONT_SMALL),
+                G.FONT_SMALL, "by Black Dog IT",
+                G.TEXT_JUSTIFY_RIGHT);
         }
 
         function toView() {

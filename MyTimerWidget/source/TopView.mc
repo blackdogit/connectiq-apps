@@ -66,14 +66,14 @@ class TopView extends UI.View {
     function onEnd() {
         var ds = Sys.getDeviceSettings();
         Att.backlight(true);
+        Sys.println("DS: vibrate="+ds.vibrateOn+" tones="+ds.tonesOn);
         if (ds.vibrateOn) {
-            Att.vibrate(true);
+            Att.vibrate([new Att.VibeProfile(50, 500)]);
         }
         if (ds.tonesOn) {
-            Att.playTone(Att.TONE_ALARM);
+            Att.playTone(Att.TONE_STOP);
         }
         stop();
-        //Sys.println("onEnd");
     }
 
     function onUpdate(dc) {
@@ -84,7 +84,7 @@ class TopView extends UI.View {
         if (startTime != null) {
             var now = Time.now().value();
             val = timerVal-(now-startTime);
-            dc.setColor(Graphics.COLOR_DK_RED, Graphics.COLOR_BLACK);
+            dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_BLACK);
         }
         var seconds = val%60;
         val = val/60;

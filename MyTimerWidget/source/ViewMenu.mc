@@ -52,10 +52,11 @@ class MenuInput extends UI.MenuInputDelegate {
         } else if(item == :set) {
             //Sys.println(":set");
             var dur = Calendar.duration({:seconds => view.timerVal});
-            var np = new UI.NumberPicker(UI.NUMBER_PICKER_TIME_OF_DAY, dur);
+            var np = new UI.NumberPicker(UI.NUMBER_PICKER_TIME, dur);
             UI.pushView(np, new SetTimeDelegate(view), UI.SLIDE_IMMEDIATE);
         } else if(item == :showVersion) {
             //Sys.println(":showVersion");
+            UI.popView(UI.SLIDE_IMMEDIATE);
             BDIT.Splash.splashUnconditionally();
         }
     }

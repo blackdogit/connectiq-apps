@@ -18,7 +18,7 @@ class ViewInputDelegate extends UI.InputDelegate {
 
     function onKey(evt) {
         var key = evt.getKey();
-        Sys.println("onKey("+key+")");
+        //Sys.println("onKey("+key+")");
         if (key != UI.KEY_MENU && key != UI.KEY_ENTER) { return false; }
 
         var menu = new UI.Menu();
@@ -30,7 +30,6 @@ class ViewInputDelegate extends UI.InputDelegate {
             menu.addItem(UI.loadResource(Rez.Strings.MenuStop), :stop);
         }
         menu.addItem(UI.loadResource(Rez.Strings.MenuVersion), :showVersion);
-
         UI.pushView(menu, new MenuInput(view), SLIDE_IMMEDIATE);
 
         return true;
@@ -53,10 +52,11 @@ class MenuInput extends UI.MenuInputDelegate {
         } else if(item == :set) {
             //Sys.println(":set");
             var dur = Calendar.duration({:seconds => view.timerVal});
-            var np = new UI.NumberPicker(UI.NUMBER_PICKER_TIME_OF_DAY, dur);
+            var np = new UI.NumberPicker(UI.NUMBER_PICKER_TIME, dur);
             UI.pushView(np, new SetTimeDelegate(view), UI.SLIDE_IMMEDIATE);
         } else if(item == :showVersion) {
             //Sys.println(":showVersion");
+            UI.popView(UI.SLIDE_IMMEDIATE);
             BDIT.Splash.splashUnconditionally();
         }
     }
