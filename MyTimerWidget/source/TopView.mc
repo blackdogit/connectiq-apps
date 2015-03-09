@@ -20,11 +20,6 @@ class TopView extends UI.View {
     //! null if not started
     var startTime = null;
 
-    //! The Drawable for the icon
-    var timerIcon;
-    //! The Drawable for the text
-    var timerTxt;
-
     //! true if this view is shown - false otherwise
     var widgetShown = false;
 
@@ -39,10 +34,6 @@ class TopView extends UI.View {
     function onLayout(dc) {
         endTimer = new Timer.Timer();
         secondTimer = new Timer.Timer();
-        setLayout(Rez.Layouts.MainLayout(dc));
-
-        timerTxt = View.findDrawableById("myTime");
-        timerIcon = View.findDrawableById("myIcon");
     }
 
     //! Starts the timer
