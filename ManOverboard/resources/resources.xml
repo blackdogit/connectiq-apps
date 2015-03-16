@@ -1,0 +1,15 @@
+<resources>
+    <string id="AppName">Man Overboard</string>
+    <string id="Version">201503xx</string>
+
+    <string id="MenuVersion">About</string>
+    
+    <bitmap id="QUALITY_NOT_AVAILABLE" filename="images/signal-0-16x16.png" />
+    <bitmap id="QUALITY_LAST_KNOWN" filename="images/signal-0-16x16.png" />
+    <bitmap id="QUALITY_POOR" filename="images/signal-1-16x16.png" />
+    <bitmap id="QUALITY_USABLE" filename="images/signal-3-16x16.png" />
+    <bitmap id="QUALITY_GOOD" filename="images/signal-3-16x16.png" />
+
+    <bitmap id="LauncherIcon" filename="images/launcher_icon.png" />
+	<bitmap id="Logo32x32" filename="images/logo32x32.png" />
+</resources>

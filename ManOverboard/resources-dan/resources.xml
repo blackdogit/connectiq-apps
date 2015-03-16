@@ -1,0 +1,8 @@
+<resources>
+    <string id="AppName">Min Timer</string>
+
+    <string id="MenuStart">Start</string>
+    <string id="MenuStop">Stop!</string>
+    <string id="MenuSet">Sæt</string>
+    <string id="MenuVersion">Vis Version</string>
+</resources>
