@@ -1,12 +1,14 @@
 <resources>
     <string id="AppName">My Timer</string>
-    <string id="Version">20150308</string>
+    <string id="Version">20150317</string>
 
     <string id="MenuTitle">Timer</string>
     <string id="MenuStart">Start</string>
     <string id="MenuStop">Stop!</string>
     <string id="MenuSet">Set</string>
     <string id="MenuAbout">About</string>
+
+	<bitmap id="Running" filename="images/Running.png" />
 
     <bitmap id="LauncherIcon" filename="images/launcher_icon.png" />
 	<bitmap id="Logo32x32" filename="images/logo32x32.png" />

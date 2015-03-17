@@ -3,7 +3,7 @@ using Toybox.Application as App;
 using Toybox.WatchUi as UI;
 using Toybox.System as Sys;
 using Toybox.Attention as Att;
-using Toybox.Graphics as Gfx;
+using Toybox.Graphics as G;
 using Toybox.Time.Gregorian as Calendar;
 using Toybox.Timer;
 using Toybox.Time;
@@ -23,6 +23,9 @@ class TopView extends UI.View {
     //! true if this view is shown - false otherwise
     var widgetShown = false;
 
+    //! Image used when the tinner is running
+    var runningImage;
+
     function initialize() {
         var v = App.getApp().getProperty("timer");
         if (v != null) {
@@ -34,6 +37,8 @@ class TopView extends UI.View {
     function onLayout(dc) {
         endTimer = new Timer.Timer();
         secondTimer = new Timer.Timer();
+
+        runningImage = UI.loadResource(Rez.Drawables.Running);
     }
 
     //! Starts the timer
@@ -59,23 +64,39 @@ class TopView extends UI.View {
         Att.backlight(true);
         Sys.println("DS: vibrate="+ds.vibrateOn+" tones="+ds.tonesOn);
         if (ds.vibrateOn) {
-            Att.vibrate([new Att.VibeProfile(50, 500)]);
+            Att.vibrate([new Att.VibeProfile(100, 500)]);
         }
         if (ds.tonesOn) {
-            Att.playTone(Att.TONE_STOP);
+            Att.playTone(Att.TONE_TIME_ALERT);
         }
         stop();
     }
 
     function onUpdate(dc) {
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.setColor(G.COLOR_WHITE, G.COLOR_BLACK);
         dc.clear();
 
         var val = timerVal;
+        // If timer is running, then calculate the time left
         if (startTime != null) {
             var now = Time.now().value();
             val = timerVal-(now-startTime);
-            dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_BLACK);
+
+            dc.drawBitmap((dc.getWidth()-runningImage.getWidth())/2,
+                (dc.getHeight()/2-dc.getFontHeight(G.FONT_NUMBER_HOT)/2)/2-runningImage.getHeight()/2,
+                runningImage);
+
+            // Less than 5 sconds left...
+            if (val <= 5) {
+                Att.backlight(true);
+                var ds = Sys.getDeviceSettings();
+                if (ds.vibrateOn) {
+                    Att.vibrate([new Att.VibeProfile(50, 100)]);
+                }
+                if (ds.tonesOn) {
+                    Att.playTone(Att.TONE_KEY);
+                }
+            }
         }
         var seconds = val%60;
         val = val/60;
@@ -83,12 +104,12 @@ class TopView extends UI.View {
         var hours = val/60;
         var txt = Lang.format("$1$:$2$:$3$", [hours.format("%02d"),minutes.format("%02d"),seconds.format("%02d")]);
 
-        dc.drawText(dc.getWidth()/2, 0,
-            Graphics.FONT_TINY, "Timer",
-            Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(0, 0,
+            G.FONT_TINY, "Timer",
+            G.TEXT_JUSTIFY_LEFT);
         dc.drawText(dc.getWidth()/2, dc.getHeight()/2,
-            Graphics.FONT_NUMBER_HOT, txt,
-            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+            G.FONT_NUMBER_HOT, txt,
+            G.TEXT_JUSTIFY_CENTER | G.TEXT_JUSTIFY_VCENTER);
     }
 
     //! Called when this View is removed from the screen. Save the
