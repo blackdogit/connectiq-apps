@@ -1,0 +1,3 @@
+<drawable-list id="clearDisplay">
+	<shape type="rectangle" width="fill" height="fill" color="Gfx.COLOR_WHITE" />
+</drawable-list>

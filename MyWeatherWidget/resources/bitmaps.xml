@@ -1,0 +1,4 @@
+<resources>
+	<bitmap id="LauncherIcon" filename="images/icon.png" />
+	<bitmap id="Logo32x32" filename="images/logo32x32.png" />
+</resources>

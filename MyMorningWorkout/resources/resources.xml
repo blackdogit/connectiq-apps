@@ -1,0 +1,13 @@
+<resources>
+    <string id="AppName">My Morning Workout</string>
+    <string id="Version">201503xx</string>
+
+    <string id="MenuTitle">Workout</string>
+    <string id="MenuStart">Start</string>
+    <string id="MenuStop">Stop!</string>
+    <string id="MenuSet">Change</string>
+    <string id="MenuVersion">Show Version</string>
+
+    <bitmap id="LauncherIcon" filename="images/launcher_icon.png" />
+	<bitmap id="Logo32x32" filename="images/logo32x32.png" />
+</resources>
