@@ -29,7 +29,7 @@ class ViewInputDelegate extends UI.InputDelegate {
         } else {
             menu.addItem(UI.loadResource(Rez.Strings.MenuStop), :stop);
         }
-        menu.addItem(UI.loadResource(Rez.Strings.MenuVersion), :showVersion);
+        menu.addItem(UI.loadResource(Rez.Strings.MenuAbout), :showVersion);
         UI.pushView(menu, new MenuInput(view), SLIDE_IMMEDIATE);
 
         return true;

@@ -4,5 +4,5 @@
     <string id="MenuStart">Start</string>
     <string id="MenuStop">Stop!</string>
     <string id="MenuSet">Sæt</string>
-    <string id="MenuVersion">Vis Version</string>
+    <string id="MenuAbout">Om</string>
 </resources>

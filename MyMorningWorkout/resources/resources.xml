@@ -6,7 +6,7 @@
     <string id="MenuStart">Start</string>
     <string id="MenuStop">Stop!</string>
     <string id="MenuSet">Change</string>
-    <string id="MenuVersion">Show Version</string>
+    <string id="MenuAbout">About</string>
 
     <bitmap id="LauncherIcon" filename="images/launcher_icon.png" />
 	<bitmap id="Logo32x32" filename="images/logo32x32.png" />
