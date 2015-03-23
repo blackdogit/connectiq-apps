@@ -8,6 +8,8 @@
     <string id="MenuSet">Set</string>
     <string id="MenuAbout">About</string>
 
+	<bitmap id="Stoped" filename="images/Running.png" />
+	<bitmap id="Paused" filename="images/Running.png" />
 	<bitmap id="Running" filename="images/Running.png" />
 
     <bitmap id="LauncherIcon" filename="images/launcher_icon.png" />

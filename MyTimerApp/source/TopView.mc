@@ -1,4 +1,3 @@
-module MyTimerWidget {
 using Toybox.Application as App;
 using Toybox.WatchUi as UI;
 using Toybox.System as Sys;
@@ -9,138 +8,137 @@ using Toybox.Timer;
 using Toybox.Time;
 
 class TopView extends UI.View {
-    //! Timer in seconds
-    var timerVal = 60;
-    //! A one-shot for timerVal*1000
-    var endTimer;
-    //! 1-second repeating timer
-    var secondTimer;
-    var secondTimerRunning = false;
-    //! Time when timer was started (as returned by Time.now().value())
-    //! null if not started
-    var startTime = null;
 
-    //! true if this view is shown - false otherwise
-    var widgetShown = false;
+    var currentPeriod = 0;
 
-    //! Image used when the tinner is running
-    var runningImage;
-
-    function initialize() {
-        var v = App.getApp().getProperty("timer");
-        if (v != null) {
-            timerVal = v.toNumber();
-        }
-    }
-
-    //! Load your resources here
     function onLayout(dc) {
-        endTimer = new Timer.Timer();
-        secondTimer = new Timer.Timer();
-
-        runningImage = UI.loadResource(Rez.Drawables.Running);
-    }
-
-    //! Starts the timer
-    function start() {
-        if (startTime != null) { return; }
-        endTimer.start(method(:onEnd), timerVal*1000, false);
-        startTime = Time.now().value();
-        updateSecondTimer();
-        UI.requestUpdate();
-    }
-
-    //! Stops the timer
-    function stop() {
-        if (startTime == null) { return; }
-        endTimer.stop();
-        startTime = null;
-        updateSecondTimer();
-        UI.requestUpdate();
-    }
-
-    function onEnd() {
-        var ds = Sys.getDeviceSettings();
-        Att.backlight(true);
-        Sys.println("DS: vibrate="+ds.vibrateOn+" tones="+ds.tonesOn);
-        if (ds.vibrateOn) {
-            Att.vibrate([new Att.VibeProfile(100, 500)]);
-        }
-        if (ds.tonesOn) {
-            Att.playTone(Att.TONE_TIME_ALERT);
-        }
-        stop();
     }
 
     function onUpdate(dc) {
         dc.setColor(G.COLOR_WHITE, G.COLOR_BLACK);
         dc.clear();
 
-        var val = timerVal;
-        // If timer is running, then calculate the time left
-        if (startTime != null) {
-            var now = Time.now().value();
-            val = timerVal-(now-startTime);
+        var font = G.FONT_NUMBER_MEDIUM;
 
-            dc.drawBitmap((dc.getWidth()-runningImage.getWidth())/2,
-                (dc.getHeight()/2-dc.getFontHeight(G.FONT_NUMBER_HOT)/2)/2-runningImage.getHeight()/2,
-                runningImage);
-
-            // Less than 5 sconds left...
-            if (val <= 5) {
-                Att.backlight(true);
-                var ds = Sys.getDeviceSettings();
-                if (ds.vibrateOn) {
-                    Att.vibrate([new Att.VibeProfile(50, 100)]);
-                }
-                if (ds.tonesOn) {
-                    Att.playTone(Att.TONE_KEY);
-                }
-            }
+        // Normalize the currentPeriod
+        var s = Conf.TIMES.size();
+        if (s == 0) {
+            Conf.TIMES = [Conf.DEF_PERIOD];
+            s = 1;
         }
-        var seconds = val%60;
-        val = val/60;
-        var minutes = val%60;
-        var hours = val/60;
-        var txt = Lang.format("$1$:$2$:$3$", [hours.format("%02d"),minutes.format("%02d"),seconds.format("%02d")]);
+        if (currentPeriod < 0) { currentPeriod = currentPeriod+s; }
+        if (currentPeriod >= s) { currentPeriod = currentPeriod-s; }
 
-        dc.drawText(0, 0,
-            G.FONT_TINY, "Timer",
-            G.TEXT_JUSTIFY_LEFT);
-        dc.drawText(dc.getWidth()/2, dc.getHeight()/2,
-            G.FONT_NUMBER_HOT, txt,
-            G.TEXT_JUSTIFY_CENTER | G.TEXT_JUSTIFY_VCENTER);
+    // TODO: the current item should not necessarily be at the top
+        var h = dc.getHeight();
+        var w = dc.getWidth();
+        var y = 0;
+        var dy = dc.getFontHeight(font)+5;
+        var i = currentPeriod-1;
+        while (y < h && i < Conf.TIMES.size()) {
+            if (i >= 0) {
+                var t = (i+1).toString()+": "+Utils.formatTime(Conf.TIMES[i]);
+                if (i == currentPeriod) {
+                    dc.setColor(G.COLOR_WHITE, G.COLOR_BLACK);
+                } else {
+                    dc.setColor(G.COLOR_LT_GRAY, G.COLOR_BLACK);
+                }
+                dc.drawText(w/2, y, font, t, G.TEXT_JUSTIFY_CENTER);
+            }
+            y = y+dy;
+            i = i+1;
+        }
     }
 
-    //! Called when this View is removed from the screen. Save the
-    //! state of your app here.
     function onShow() {
-        widgetShown = true;
-        updateSecondTimer();
     }
     function onHide() {
-        App.getApp().setProperty("timer", timerVal);
-        widgetShown = false;
-        updateSecondTimer();
+        Conf.onAppStop();
     }
 
-    //! Starts and stops secondTimer as needed
-    function updateSecondTimer() {
-        var sTWanted = startTime != null && widgetShown;
-        if (secondTimerRunning == sTWanted) { return; }
-        secondTimerRunning = sTWanted;
-        //Sys.println("updateSecondTimer "+secondTimerRunning);
-        if (secondTimerRunning) {
-            secondTimer.start(method(:onTick), 1000, true);
-        } else {
-            secondTimer.stop();
+    function getBehavior() {
+        return new TopViewBehavior(self);
+    }
+    function move(delta) {
+        currentPeriod = currentPeriod+delta;
+        UI.requestUpdate();
+    }
+
+    function editPeriod() {
+        var dur = Calendar.duration({:seconds => Conf.TIMES[currentPeriod]});
+        var np = new UI.NumberPicker(UI.NUMBER_PICKER_TIME, dur);
+        UI.pushView(np, new Utils.CommonNumberPickerDelegate(method(:onNumberPicked)), UI.SLIDE_IMMEDIATE);
+    }
+    function onNumberPicked(dur) {
+        Conf.TIMES[currentPeriod] = dur.value();
+        UI.requestUpdate();
+    }
+
+    function menu() {
+        var menu = new UI.Menu();
+        menu.setTitle("Edit Timers");
+        menu.addItem("Start", :start);
+        menu.addItem("Edit", :edit);
+        menu.addItem("Insert", :insert);
+        menu.addItem("Add", :add);
+        menu.addItem("Delete", :delete);
+        menu.addItem("Settings", :settings);
+        menu.addItem("About", :about);
+        UI.pushView(menu, new Utils.CommonMenuInput(method(:onMenuItem)), SLIDE_IMMEDIATE);
+    }
+
+    function onMenuItem(item) {
+        if (item == :start) {
+            Sys.println(":start");
+            Conf.onAppStop();
+            var v = new RunView();
+            UI.pushView(v, v.getBehavior(), UI.SLIDE_LEFT);
+            return;
+        } else if (item == :edit) {
+            editPeriod();
+            return;
+        } else if (item == :insert) {
+            Conf.TIMES = Utils.arrayAdd(Conf.TIMES, currentPeriod, Conf.DEF_PERIOD);
+        } else if (item == :add) {
+            Conf.TIMES = Utils.arrayAdd(Conf.TIMES, Conf.TIMES.size(), Conf.DEF_PERIOD);
+        } else if (item == :delete) {
+            Conf.TIMES = Utils.arrayDelete(Conf.TIMES, currentPeriod);
+        } else if (item == :settings) {
+            Sys.println(":ettings");
+            Conf.configure();
+            return;
+        } else if (item == :about) {
+            UI.popView(UI.SLIDE_IMMEDIATE);
+            BDIT.Splash.splashUnconditionally();
+            return;
         }
-    }
-
-    function onTick() {
-        //Sys.println("onTick");
-
+        Sys.println("TIMES="+Conf.TIMES.toString());
         UI.requestUpdate();
     }
 }
+
+class TopViewBehavior extends UI.InputDelegate {
+    var myView;
+    function initialize(view) {
+        myView = view;
+    }
+
+    function onKey(evt) {
+        var key = evt.getKey();
+        Sys.println("key="+key);
+        if (key == UI.KEY_DOWN) {
+            myView.move(1);
+            return true;
+        } else if (key == UI.KEY_UP) {
+            myView.move(-1);
+            return true;
+        } else if (key == UI.KEY_ENTER) {
+            myView.editPeriod();
+            return true;
+        } else if (key == UI.KEY_MENU) {
+            myView.menu();
+            return true;
+        }
+        return false;
+    }
 }
