@@ -1,14 +1,17 @@
+using Toybox.System as Sys;
+using Toybox.Math;
+
 module BDIT {
 module DistanceUtils {
-    const VERSION = "1.0.1.20150221";
+    const VERSION = "1.0.1.20150323";
 
-    using Toybox.System as Sys;
-    using Toybox.Math;
-
-    const NO_DATA = [null, null];
+    var NO_DATA;
 
     //! The radius of earth in m
     const RADIUS_EARTH = 6371000.0;
+
+    var PIHalf;
+    var PITwice;
 
     //! 2 pi R/2 pi
 
@@ -20,6 +23,11 @@ module DistanceUtils {
     //! @param [Toybox.Position.Location] end the end location
     //! @returns [[Float, Float]] the distance (in meters) and the heading (in radians) from start to end
     function calcDistHeading(start, end) {
+        if (NO_DATA == null) {
+            NO_DATA = [null, null];
+            PIHalf = Math.PI/2;
+            PITwice = Math.PI*2;
+        }
         if (start == null || end == null) {
             return NO_DATA;
         }
@@ -45,16 +53,24 @@ module DistanceUtils {
         var dlat = startLat-endLat;
         var dlong = startLong-endLong;
 
-        var dist = Math.sqrt(Math.pow(dlat, 2)+Math.pow(dlong, 2))*RADIUS_EARTH;
+        //var dist = Math.sqrt(Math.pow(dlat, 2)+Math.pow(dlong, 2))*RADIUS_EARTH;
+        //var dist = Math.acos(Math.sin(startLat) * Math.sin(endLat) + Math.cos(startLat) * Math.cos(endLat) * Math.cos(endLong-startLong) ) * RADIUS_EARTH;
+        // Algorithm from http://stackoverflow.com/a/19772119/796559
+        var a = PIHalf - startLat;
+        var b = PIHalf - endLat;
+        var u = a * a + b * b;
+        var v = - 2 * a * b * Math.cos(endLong-startLong);
+        var c = Math.sqrt((u + v).abs());
+        var dist = c* RADIUS_EARTH;
 
         // 0 is north, PI/2 is due east, etc
         var heading = 0;
         // This seems to be necessary to avoid a problem with atan for small values
-        if (dlat.abs() < 1e-8 || (dlong/dlat).abs() < 1e-4) {
+        if (dlat.abs() < 1e-8) {
             if (dlong >= 0) {
-                heading = Math.PI/2;
+                heading = PIHalf;
             } else {
-                heading = -Math.PI/2;
+                heading = -PIHalf;
             }
         } else {
             var d = dlong/dlat;
@@ -63,10 +79,10 @@ module DistanceUtils {
                 heading += Math.PI;
             }
             if (heading < 0) {
-                heading += 2.0*Math.PI;
+                heading += PITwice;
             }
         }
-        heading = heading*360.0/(2.0*Math.PI);
+        heading = heading*360.0/PITwice;
 
         //Sys.println("* "+startLat.toString()+" "+startLong.toString()+"  -->  "+endLat.toString()+" "+endLong.toString()+" = "+dlat.toString()+" "+dlong.toString());
 
