@@ -1,4 +1,3 @@
-module MyDistanceBack {
 using Toybox.WatchUi as UI;
 using Toybox.System as Sys;
 using Toybox.Attention as Att;
@@ -7,7 +6,7 @@ using Toybox.Math;
 
 //! Implementation of the data field.
 class DataField extends UI.DataField {
-    const NO_DATA = "---";
+    const NO_DATA = "-no data-";
 
     var dist = 0;
     var heading = 0;
@@ -26,7 +25,7 @@ class DataField extends UI.DataField {
         //heading = Math.PI.toFloat()*.2;
         currentHeading = info.currentHeading;
 
-        Sys.println("compute(info): dist="+dist+", heading="+heading+", currentHeading="+currentHeading);
+        return "";
     }
 
     function onUpdate(dc) {
@@ -49,12 +48,13 @@ class DataField extends UI.DataField {
         // Center of the data field
         var wc = w/2;
         // (h-tiny.height)/2+tiny.height
-        var hc = (h+dc.getFontHeight(G.FONT_TINY))/2;
+        //var hc = (h+dc.getFontHeight(G.FONT_TINY))/2;
+        var hc = h/2;
 
         // Show array if heading and current heading is given
         if (Conf.USE_ARROW && heading != null && currentHeading != null) {
             dc.setColor(G.COLOR_BLACK, G.COLOR_WHITE);
-            dc.clear();
+            //dc.clear();
             var size = w;
             if (h < w) { size = h; }
             BDIT.DrawUtils.drawArrow(dc, heading/180*Math.PI-currentHeading, size*.40, G.COLOR_DK_GREEN, wc, hc);
@@ -91,5 +91,4 @@ class DataField extends UI.DataField {
     function calcHeading(heading) {
         return heading.toNumber().toString()+"°";
     }
-}
 }

@@ -1,4 +1,3 @@
-module MyDistanceBack {
 using Toybox.Application as App;
 using Toybox.System as Sys;
 
@@ -6,25 +5,20 @@ using Toybox.System as Sys;
 const DEBUG = true;
 
 module Conf {
-    const VERSION = "20150223";
+    const VERSION = "20150323";
     var USE_ANGLE = true;
     var USE_ARROW = true;
 }
 
 //! The application class for the datafield.
-class Application extends App.AppBase {
+class App extends App.AppBase {
     function onStart() {
-        Sys.println("MyDistanceBack version "+Conf.VERSION);
-        Sys.println("app.onStart: meme="+Sys.getSystemStats().usedMemory+", free="+Sys.getSystemStats().freeMemory+", total="+Sys.getSystemStats().totalMemory);
-        // NOP
     }
 
     function onStop() {
-        // NOP
     }
 
     function getInitialView() {
         return [ new DataField() ];
     }
-}
 }
