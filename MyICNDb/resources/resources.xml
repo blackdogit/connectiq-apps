@@ -1,6 +1,9 @@
 <resources>
     <string id="AppName">ICNDb</string>
-    <string id="Version">20150307</string>
+    <string id="Version">20150323</string>
+    
+    <string id="Device">unknown</string>
+    <string id="DeviceForm">rectangle</string>
 
     <bitmap id="LauncherIcon" filename="images/launcher_icon.png" />
 	<bitmap id="Logo32x32" filename="images/logo32x32.png" />
