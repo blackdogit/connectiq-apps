@@ -31,14 +31,14 @@ class RunView extends UI.View {
 
     //! Starts the timer
     function start() {
-        Sys.println("RV.start()");
+        //Sys.println("RV.start()");
         timer.start(method(:onTick), 1000, true);
         startPeriod();
     }
 
     //! Starts a new item
     function startPeriod() {
-        Sys.println("RV.startPeriod()");
+        //Sys.println("RV.startPeriod()");
         currentPeriodEnd = Time.now().value()+Conf.TIMES[currentPeriod];
         UI.requestUpdate();
     }
@@ -49,9 +49,8 @@ class RunView extends UI.View {
 
     //! Stops the timer
     function stop() {
-        Sys.println("RV.stop()");
+        //Sys.println("RV.stop()");
         timer.stop();
-        UI.popView(UI.SLIDE_RIGHT);
     }
 
     //! Called when the current item ends
@@ -94,7 +93,7 @@ class RunView extends UI.View {
     }
 
     function onUpdate(dc) {
-        Sys.println("RV.onUpdate()");
+        //Sys.println("RV.onUpdate()");
         dc.setColor(G.COLOR_LT_GRAY, G.COLOR_BLACK);
         dc.clear();
 
@@ -133,6 +132,30 @@ class RunView extends UI.View {
     }
 
     function getBehavior() {
-        return null;
+        return new RunViewBehavior(self);
+    }
+}
+
+class RunViewBehavior extends UI.InputDelegate {
+    var myView;
+    function initialize(view) {
+        myView = view;
+    }
+
+    function onKey(evt) {
+        var key = evt.getKey();
+        //Sys.println("key="+key);
+        if (key == UI.KEY_DOWN) {
+            return true;
+        } else if (key == UI.KEY_UP) {
+            return true;
+        } else if (key == UI.KEY_ENTER) {
+            myView.stop();
+            UI.popView(UI.SLIDE_RIGHT);
+            return true;
+        } else if (key == UI.KEY_MENU) {
+            return true;
+        }
+        return false;
     }
 }

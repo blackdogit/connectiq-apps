@@ -11,7 +11,6 @@
         <iq:permissions/>
 
         <iq:languages>
-            <iq:language>dan</iq:language>
             <iq:language>eng</iq:language>
         </iq:languages>
 

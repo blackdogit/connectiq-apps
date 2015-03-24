@@ -29,7 +29,6 @@ class TopView extends UI.View {
         if (currentPeriod < 0) { currentPeriod = currentPeriod+s; }
         if (currentPeriod >= s) { currentPeriod = currentPeriod-s; }
 
-    // TODO: the current item should not necessarily be at the top
         var h = dc.getHeight();
         var w = dc.getWidth();
         var y = 0;
@@ -59,6 +58,7 @@ class TopView extends UI.View {
     function getBehavior() {
         return new TopViewBehavior(self);
     }
+
     function move(delta) {
         currentPeriod = currentPeriod+delta;
         UI.requestUpdate();
@@ -69,6 +69,13 @@ class TopView extends UI.View {
         var np = new UI.NumberPicker(UI.NUMBER_PICKER_TIME, dur);
         UI.pushView(np, new Utils.CommonNumberPickerDelegate(method(:onNumberPicked)), UI.SLIDE_IMMEDIATE);
     }
+
+    function start() {
+        Conf.onAppStop();
+        var v = new RunView();
+        UI.pushView(v, v.getBehavior(), UI.SLIDE_LEFT);
+    }
+
     function onNumberPicked(dur) {
         Conf.TIMES[currentPeriod] = dur.value();
         UI.requestUpdate();
@@ -89,10 +96,7 @@ class TopView extends UI.View {
 
     function onMenuItem(item) {
         if (item == :start) {
-            Sys.println(":start");
-            Conf.onAppStop();
-            var v = new RunView();
-            UI.pushView(v, v.getBehavior(), UI.SLIDE_LEFT);
+            start();
             return;
         } else if (item == :edit) {
             editPeriod();
@@ -104,7 +108,7 @@ class TopView extends UI.View {
         } else if (item == :delete) {
             Conf.TIMES = Utils.arrayDelete(Conf.TIMES, currentPeriod);
         } else if (item == :settings) {
-            Sys.println(":ettings");
+            //Sys.println(":ettings");
             Conf.configure();
             return;
         } else if (item == :about) {
@@ -112,7 +116,7 @@ class TopView extends UI.View {
             BDIT.Splash.splashUnconditionally();
             return;
         }
-        Sys.println("TIMES="+Conf.TIMES.toString());
+        //Sys.println("TIMES="+Conf.TIMES.toString());
         UI.requestUpdate();
     }
 }
@@ -125,7 +129,7 @@ class TopViewBehavior extends UI.InputDelegate {
 
     function onKey(evt) {
         var key = evt.getKey();
-        Sys.println("key="+key);
+        //Sys.println("key="+key);
         if (key == UI.KEY_DOWN) {
             myView.move(1);
             return true;
@@ -133,7 +137,7 @@ class TopViewBehavior extends UI.InputDelegate {
             myView.move(-1);
             return true;
         } else if (key == UI.KEY_ENTER) {
-            myView.editPeriod();
+            myView.start();
             return true;
         } else if (key == UI.KEY_MENU) {
             myView.menu();
