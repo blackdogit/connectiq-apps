@@ -3,7 +3,7 @@ using Toybox.Math;
 
 module BDIT {
 module DistanceUtils {
-    const VERSION = "1.0.1.20150323";
+    const VERSION = "1.0.1.20150325";
 
     var NO_DATA;
 
@@ -34,8 +34,8 @@ module DistanceUtils {
         // @type [lat, long]
         // Unfortunately I have to convert the results of toRadians to save memory :-(
         var r = start.toRadians();
-        var startLat = r[0].toFloat();
-        var startLong = r[1].toFloat();
+        var startLat = r[0];//.toFloat();
+        var startLong = r[1];//.toFloat();
 
         //Sys.println("s="+startLat.toString()+" "+MCUtils.typeof(startLat));
         //Sys.println("pi="+Math.PI.toString()+" "+MCUtils.typeof(Math.PI));
@@ -45,23 +45,18 @@ module DistanceUtils {
 
         // @type [lat, long]
         r = end.toRadians();
-        var endLat = r[0].toFloat();
-        var endLong = r[1].toFloat();
+        var endLat = r[0];//.toFloat();
+        var endLong = r[1];//.toFloat();
         r = null;
 
         // Vector from end to start
         var dlat = startLat-endLat;
         var dlong = startLong-endLong;
 
+        //Sys.println("* "+startLat.toString()+" "+startLong.toString()+"  -->  "+endLat.toString()+" "+endLong.toString()+" = "+dlat.toString()+" "+dlong.toString());
+
         //var dist = Math.sqrt(Math.pow(dlat, 2)+Math.pow(dlong, 2))*RADIUS_EARTH;
-        //var dist = Math.acos(Math.sin(startLat) * Math.sin(endLat) + Math.cos(startLat) * Math.cos(endLat) * Math.cos(endLong-startLong) ) * RADIUS_EARTH;
-        // Algorithm from http://stackoverflow.com/a/19772119/796559
-        var a = PIHalf - startLat;
-        var b = PIHalf - endLat;
-        var u = a * a + b * b;
-        var v = - 2 * a * b * Math.cos(endLong-startLong);
-        var c = Math.sqrt((u + v).abs());
-        var dist = c* RADIUS_EARTH;
+        var dist = Math.acos(Math.sin(startLat) * Math.sin(endLat) + Math.cos(startLat) * Math.cos(endLat) * Math.cos(endLong-startLong) ) * RADIUS_EARTH;
 
         // 0 is north, PI/2 is due east, etc
         var heading = 0;
@@ -84,9 +79,9 @@ module DistanceUtils {
         }
         heading = heading*360.0/PITwice;
 
-        //Sys.println("* "+startLat.toString()+" "+startLong.toString()+"  -->  "+endLat.toString()+" "+endLong.toString()+" = "+dlat.toString()+" "+dlong.toString());
+        //Sys.println("dist="+dist+" heading="+heading);
 
-        return [dist, heading];
+        return [dist.toFloat(), heading.toFloat()];
     }
 
     //! Converts the specified distance to a string
