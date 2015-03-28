@@ -3,16 +3,9 @@ using Toybox.System as Sys;
 using Toybox.WatchUi as UI;
 using Toybox.Lang;
 
-module Utils {
-    //! Formats the specified time value as "hh:mm:ss".
-    function formatTime(val) {
-        if (val == null) { return "NULL"; }
-        var seconds = val%60;
-        val = val/60;
-        var minutes = val%60;
-        var hours = val/60;
-        return Lang.format("$1$:$2$:$3$", [hours.format("%02d"),minutes.format("%02d"),seconds.format("%02d")]);
-    }
+module BDIT {
+module ArrayUtils {
+    const VERSION = "20150328";
 
     //! Returns the array with the specified item deleted.
     function arrayDelete(array, no) {
@@ -37,4 +30,5 @@ module Utils {
 
         return n;
     }
+}
 }
