@@ -2,5 +2,4 @@
     <string id="AppName">UtilitiesTests</string>
 
     <bitmap id="LauncherIcon" filename="images/launcher_icon.png" />
-    <bitmap id="id_monkey" filename="images/monkey.png" />
 </resources>

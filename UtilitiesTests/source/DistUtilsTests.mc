@@ -14,6 +14,9 @@ module DistUtilsTests {
         var p5 = new Pos.Location({:latitude => 10, :longitude => 11, :format => :degrees});
         var p6 = new Pos.Location({:latitude => 11, :longitude => 10, :format => :degrees});
 
+        var p7 = new Pos.Location({:latitude => 55.619946, :longitude => 12.490420, :format => :degrees});
+        var p8 = new Pos.Location({:latitude => 55.619304, :longitude => 12.491708, :format => :degrees});
+
         var pstart = new Pos.Location({:latitude => Math.PI, :longitude => Math.PI, :format => :radians});
 
         t(null, null, null, null);
@@ -21,11 +24,15 @@ module DistUtilsTests {
         t(null, p2, null, null);
         t(pstart, p2, null, null);
 
-        //t(p4, p5, 109523, -90);
-        t(p4, p6, 111209, 180);
+        t(p4, p5, 109505.58, -90);
+        t(p5, p4, 109505.58, 90);
+        t(p4, p6, 111194, 180);
+        t(p6, p4, 111194, 0);
 
-        t(p1, p2, 6329208, 192.6);
-        t(p3, p2, 4399.39, 68.7);
+        t(p1, p2, 6287067, 192.6);
+        t(p3, p2, 4225.42, 68.7);
+
+        t(p8, p7, 107.7647, 116);
     }
 
     function t(p1, p2, expectedDist, expectedHeading) {

@@ -3,7 +3,7 @@ using Toybox.Math;
 
 module BDIT {
 module DistanceUtils {
-    const VERSION = "1.0.1.20150325";
+    const VERSION = "1.0.1.20150328";
 
     var NO_DATA;
 
@@ -32,21 +32,20 @@ module DistanceUtils {
             return NO_DATA;
         }
         // @type [lat, long]
-        // Unfortunately I have to convert the results of toRadians to save memory :-(
         var r = start.toRadians();
-        var startLat = r[0];//.toFloat();
-        var startLong = r[1];//.toFloat();
+        var startLat = r[0];
+        var startLong = r[1];
 
         //Sys.println("s="+startLat.toString()+" "+MCUtils.typeof(startLat));
         //Sys.println("pi="+Math.PI.toString()+" "+MCUtils.typeof(Math.PI));
-        if (startLat == Math.PI && startLong == Math.PI) {
+        if ((startLat-Math.PI).abs() < 0.001 && (startLong-Math.PI).abs() < 0.001) {
             return NO_DATA;
         }
 
         // @type [lat, long]
         r = end.toRadians();
-        var endLat = r[0];//.toFloat();
-        var endLong = r[1];//.toFloat();
+        var endLat = r[0];
+        var endLong = r[1];
         r = null;
 
         // Vector from end to start
@@ -55,7 +54,7 @@ module DistanceUtils {
 
         //Sys.println("* "+startLat.toString()+" "+startLong.toString()+"  -->  "+endLat.toString()+" "+endLong.toString()+" = "+dlat.toString()+" "+dlong.toString());
 
-        //var dist = Math.sqrt(Math.pow(dlat, 2)+Math.pow(dlong, 2))*RADIUS_EARTH;
+        // Rather expensive, but works!
         var dist = Math.acos(Math.sin(startLat) * Math.sin(endLat) + Math.cos(startLat) * Math.cos(endLat) * Math.cos(endLong-startLong) ) * RADIUS_EARTH;
 
         // 0 is north, PI/2 is due east, etc
