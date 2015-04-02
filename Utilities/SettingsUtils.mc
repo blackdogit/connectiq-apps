@@ -161,6 +161,19 @@ module SettingsUtils {
             }
             return false;
         }
+
+        function onSwipe(evt) {
+            var dir = evt.getDirection();
+            if (dir == UI.SWIPE_DOWN) {
+                menu.onMenuMove(-1);
+                return true;
+            }
+            if (dir == UI.SWIPE_UP) {
+                menu.onMenuMove(1);
+                return true;
+            }
+            return false;
+        }
     }
 }
 }
