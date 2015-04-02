@@ -112,10 +112,10 @@ class RunView extends UI.View {
             shortTone();
         }
 
-        var txt = Utils.formatTime(val);
+        var txt = BDIT.TimeUtils.formatTime(val);
 
         dc.drawText(dc.getWidth()/2, dc.getHeight()/6,
-            G.FONT_TINY, "#"+(currentPeriod+1),
+            G.FONT_TINY, "#"+(currentPeriod+1)+" of "+Conf.TIMES.size(),
             G.TEXT_JUSTIFY_CENTER);
         dc.setColor(G.COLOR_WHITE, G.COLOR_BLACK);
         dc.drawText(dc.getWidth()/2, dc.getHeight()/2,

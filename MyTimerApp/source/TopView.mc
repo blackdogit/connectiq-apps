@@ -36,7 +36,7 @@ class TopView extends UI.View {
         var i = currentPeriod-1;
         while (y < h && i < Conf.TIMES.size()) {
             if (i >= 0) {
-                var t = (i+1).toString()+": "+Utils.formatTime(Conf.TIMES[i]);
+                var t = (i+1).toString()+": "+BDIT.TimeUtils.formatTime(Conf.TIMES[i]);
                 if (i == currentPeriod) {
                     dc.setColor(G.COLOR_WHITE, G.COLOR_BLACK);
                 } else {
@@ -67,7 +67,7 @@ class TopView extends UI.View {
     function editPeriod() {
         var dur = Calendar.duration({:seconds => Conf.TIMES[currentPeriod]});
         var np = new UI.NumberPicker(UI.NUMBER_PICKER_TIME, dur);
-        UI.pushView(np, new Utils.CommonNumberPickerDelegate(method(:onNumberPicked)), UI.SLIDE_IMMEDIATE);
+        UI.pushView(np, new BDIT.UIUtils.CommonNumberPickerDelegate(method(:onNumberPicked)), UI.SLIDE_IMMEDIATE);
     }
 
     function start() {
@@ -91,10 +91,11 @@ class TopView extends UI.View {
         menu.addItem("Delete", :delete);
         menu.addItem("Settings", :settings);
         menu.addItem("About", :about);
-        UI.pushView(menu, new Utils.CommonMenuInput(method(:onMenuItem)), SLIDE_IMMEDIATE);
+        UI.pushView(menu, new BDIT.UIUtils.CommonMenuInput(method(:onMenuItem)), SLIDE_IMMEDIATE);
     }
 
     function onMenuItem(item) {
+        UI.popView(UI.SLIDE_IMMEDIATE);
         if (item == :start) {
             start();
             return;
@@ -102,17 +103,17 @@ class TopView extends UI.View {
             editPeriod();
             return;
         } else if (item == :insert) {
-            Conf.TIMES = Utils.arrayAdd(Conf.TIMES, currentPeriod, Conf.DEF_PERIOD);
+            Conf.TIMES = BDIT.ArrayUtils.arrayAdd(Conf.TIMES, currentPeriod, Conf.DEF_PERIOD);
         } else if (item == :add) {
-            Conf.TIMES = Utils.arrayAdd(Conf.TIMES, Conf.TIMES.size(), Conf.DEF_PERIOD);
+            Conf.TIMES = BDIT.ArrayUtils.arrayAdd(Conf.TIMES, Conf.TIMES.size(), Conf.DEF_PERIOD);
+            currentPeriod = Conf.TIMES.size()-1;
         } else if (item == :delete) {
-            Conf.TIMES = Utils.arrayDelete(Conf.TIMES, currentPeriod);
+            Conf.TIMES = BDIT.ArrayUtils.arrayDelete(Conf.TIMES, currentPeriod);
         } else if (item == :settings) {
-            //Sys.println(":ettings");
+            //Sys.println(":s$ettings");
             Conf.configure();
             return;
         } else if (item == :about) {
-            UI.popView(UI.SLIDE_IMMEDIATE);
             BDIT.Splash.splashUnconditionally();
             return;
         }

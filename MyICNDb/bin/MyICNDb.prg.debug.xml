@@ -1,174 +1,177 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <debugInfo>
 <pcToLineNum>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/UIUtils.mc" lineNum="13" pc="268435458" symbol="initialize"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/UIUtils.mc" lineNum="17" pc="268435471" symbol="onMenuItem"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/UIUtils.mc" lineNum="24" pc="268435494" symbol="initialize"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/UIUtils.mc" lineNum="28" pc="268435507" symbol="onNumberPicked"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="14" pc="268435530" symbol="initialize"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="15" pc="268435573" symbol="initialize"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="31" pc="268435597" symbol="update"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="32" pc="268435614" symbol="update"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="33" pc="268435630" symbol="update"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="38" pc="268435672" symbol="icndbCB"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="41" pc="268435688" symbol="icndbCB"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="45" pc="268435716" symbol="decodeHTML"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="46" pc="268435741" symbol="decodeHTML"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="47" pc="268435766" symbol="decodeHTML"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="48" pc="268435791" symbol="decodeHTML"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="50" pc="268435816" symbol="decodeHTML"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="54" pc="268435822" symbol="replace"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="55" pc="268435829" symbol="replace"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="56" pc="268435859" symbol="replace"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="57" pc="268435874" symbol="replace"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="58" pc="268435881" symbol="replace"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="59" pc="268435888" symbol="replace"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="61" pc="268435894" symbol="replace"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="62" pc="268435920" symbol="replace"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="65" pc="268435973" symbol="replace"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="69" pc="268435979" symbol="setMessage"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="70" pc="268435989" symbol="setMessage"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="74" pc="268436008" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="74" pc="268436043" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="75" pc="268436077" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="75" pc="268436094" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="77" pc="268436110" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="78" pc="268436150" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="80" pc="268436162" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="81" pc="268436175" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="82" pc="268436188" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="83" pc="268436195" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="85" pc="268436202" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="86" pc="268436227" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="87" pc="268436237" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="88" pc="268436247" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="90" pc="268436263" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="91" pc="268436276" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="92" pc="268436336" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="95" pc="268436348" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="96" pc="268436384" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="97" pc="268436394" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="98" pc="268436428" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="99" pc="268436439" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="101" pc="268436489" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="102" pc="268436496" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="107" pc="268436512" symbol="getBehavior"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="112" pc="268436540" symbol="move"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="113" pc="268436559" symbol="move"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="117" pc="268436578" symbol="menu"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="118" pc="268436606" symbol="menu"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="119" pc="268436623" symbol="menu"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="120" pc="268436645" symbol="menu"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="121" pc="268436667" symbol="menu"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="125" pc="268436746" symbol="onMenuItem"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="126" pc="268436757" symbol="onMenuItem"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="128" pc="268436783" symbol="onMenuItem"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="8" pc="268439049" symbol="&lt;init&gt;"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="9" pc="268439058" symbol="&lt;init&gt;"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="18" pc="268439085" symbol="&lt;init&gt;"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="140" pc="268436813" symbol="initialize"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="144" pc="268436826" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="146" pc="268436839" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="147" pc="268436857" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="148" pc="268436875" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="150" pc="268436881" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="152" pc="268436899" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="153" pc="268436922" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="155" pc="268436928" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="157" pc="268436946" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="158" pc="268436969" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="160" pc="268436975" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="162" pc="268436993" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="163" pc="268437022" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="166" pc="268437028" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="170" pc="268437034" symbol="onSwipe"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="171" pc="268437047" symbol="onSwipe"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="172" pc="268437065" symbol="onSwipe"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="173" pc="268437094" symbol="onSwipe"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="175" pc="268437100" symbol="onSwipe"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="176" pc="268437118" symbol="onSwipe"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="177" pc="268437141" symbol="onSwipe"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="179" pc="268437147" symbol="onSwipe"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="13" pc="268437153" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="13" pc="268437160" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="14" pc="268437176" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="15" pc="268437206" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="16" pc="268437214" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="17" pc="268437221" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="18" pc="268437228" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="20" pc="268437278" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="21" pc="268437296" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="22" pc="268437296" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="23" pc="268437303" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="24" pc="268437307" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="26" pc="268437313" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="27" pc="268437333" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="32" pc="268437365" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="33" pc="268437365" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="34" pc="268437385" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="35" pc="268437398" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="36" pc="268437415" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="37" pc="268437423" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="38" pc="268437430" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="39" pc="268437440" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="40" pc="268437447" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="43" pc="268437457" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="45" pc="268437461" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="47" pc="268437468" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="48" pc="268437485" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="49" pc="268437492" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="52" pc="268437505" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="53" pc="268437510" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="54" pc="268437525" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/StringUtils.mc" lineNum="57" pc="268437548" symbol="breakupLines"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="20" pc="268437554" symbol="splashIfNeeded"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="21" pc="268437585" symbol="splashIfNeeded"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="22" pc="268437599" symbol="splashIfNeeded"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="24" pc="268437629" symbol="splashIfNeeded"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="25" pc="268437667" symbol="splashIfNeeded"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="26" pc="268437695" symbol="splashIfNeeded"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="31" pc="268437734" symbol="splashUnconditionally"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="32" pc="268437760" symbol="splashUnconditionally"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="54" pc="268437804" symbol="initialize"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="55" pc="268437814" symbol="initialize"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="61" pc="268437827" symbol="onLayout"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="62" pc="268437870" symbol="onLayout"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="64" pc="268437913" symbol="onLayout"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="65" pc="268437926" symbol="onLayout"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="66" pc="268437960" symbol="onLayout"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="71" pc="268438010" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="72" pc="268438046" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="74" pc="268438058" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="75" pc="268438071" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="77" pc="268438078" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="78" pc="268438103" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="79" pc="268438113" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="82" pc="268438123" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="84" pc="268438165" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="88" pc="268438304" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="89" pc="268438340" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="92" pc="268438497" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="98" pc="268438587" symbol="toView"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="99" pc="268438600" symbol="toView"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="101" pc="268438621" symbol="toView"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="102" pc="268438634" symbol="toView"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="103" pc="268438678" symbol="toView"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="104" pc="268438687" symbol="toView"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="106" pc="268438699" symbol="toView"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="111" pc="268438730" symbol="getBehavior"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="43" pc="268439184" symbol="&lt;init&gt;"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="118" pc="268438772" symbol="initialize"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="121" pc="268438785" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/SplashScreen.mc" lineNum="122" pc="268438809" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/App.mc" lineNum="6" pc="268438833" symbol="onStart"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/App.mc" lineNum="13" pc="268438851" symbol="getInitialView"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/App.mc" lineNum="14" pc="268438875" symbol="getInitialView"/>
-<entry filename="Rez" lineNum="5" pc="268438975" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="6" pc="268438984" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="7" pc="268438993" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="8" pc="268439002" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="13" pc="268438953" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="14" pc="268438962" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/UIUtils.mc" lineNum="13" pc="268435458" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/UIUtils.mc" lineNum="17" pc="268435471" symbol="onMenuItem"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/UIUtils.mc" lineNum="24" pc="268435494" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/UIUtils.mc" lineNum="28" pc="268435507" symbol="onNumberPicked"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="13" pc="268435530" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="13" pc="268435537" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="14" pc="268435553" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="15" pc="268435583" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="16" pc="268435591" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="17" pc="268435598" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="18" pc="268435605" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="20" pc="268435655" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="21" pc="268435673" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="22" pc="268435673" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="23" pc="268435680" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="24" pc="268435684" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="26" pc="268435690" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="27" pc="268435710" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="32" pc="268435742" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="33" pc="268435742" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="34" pc="268435762" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="35" pc="268435775" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="36" pc="268435792" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="37" pc="268435800" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="38" pc="268435807" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="39" pc="268435817" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="40" pc="268435824" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="43" pc="268435834" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="45" pc="268435838" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="47" pc="268435845" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="48" pc="268435862" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="49" pc="268435869" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="52" pc="268435882" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="53" pc="268435887" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="54" pc="268435902" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/StringUtils.mc" lineNum="57" pc="268435925" symbol="breakupLines"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="20" pc="268435931" symbol="splashIfNeeded"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="21" pc="268435962" symbol="splashIfNeeded"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="22" pc="268435976" symbol="splashIfNeeded"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="24" pc="268436006" symbol="splashIfNeeded"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="25" pc="268436044" symbol="splashIfNeeded"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="26" pc="268436072" symbol="splashIfNeeded"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="31" pc="268436111" symbol="splashUnconditionally"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="32" pc="268436137" symbol="splashUnconditionally"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="50" pc="268436181" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="51" pc="268436191" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="58" pc="268436204" symbol="onLayout"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="59" pc="268436247" symbol="onLayout"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="60" pc="268436290" symbol="onLayout"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="61" pc="268436320" symbol="onLayout"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="62" pc="268436333" symbol="onLayout"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="63" pc="268436367" symbol="onLayout"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="67" pc="268436414" symbol="onLayout"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="71" pc="268436495" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="72" pc="268436531" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="74" pc="268436543" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="75" pc="268436556" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="77" pc="268436563" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="78" pc="268436588" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="79" pc="268436598" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="82" pc="268436608" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="84" pc="268436650" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="88" pc="268436810" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="89" pc="268436846" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="92" pc="268437024" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="98" pc="268437114" symbol="toView"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="99" pc="268437127" symbol="toView"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="101" pc="268437148" symbol="toView"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="102" pc="268437161" symbol="toView"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="103" pc="268437205" symbol="toView"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="104" pc="268437214" symbol="toView"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="106" pc="268437226" symbol="toView"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="111" pc="268437257" symbol="getBehavior"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="39" pc="268439334" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="55" pc="268439343" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="118" pc="268437299" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="121" pc="268437312" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/utils/SplashScreen.mc" lineNum="122" pc="268437336" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="14" pc="268437360" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="15" pc="268437403" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="31" pc="268437427" symbol="update"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="32" pc="268437444" symbol="update"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="33" pc="268437460" symbol="update"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="38" pc="268437502" symbol="icndbCB"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="41" pc="268437518" symbol="icndbCB"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="45" pc="268437546" symbol="decodeHTML"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="46" pc="268437571" symbol="decodeHTML"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="47" pc="268437596" symbol="decodeHTML"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="48" pc="268437621" symbol="decodeHTML"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="50" pc="268437646" symbol="decodeHTML"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="54" pc="268437652" symbol="replace"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="55" pc="268437659" symbol="replace"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="56" pc="268437689" symbol="replace"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="57" pc="268437704" symbol="replace"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="58" pc="268437711" symbol="replace"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="59" pc="268437718" symbol="replace"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="61" pc="268437724" symbol="replace"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="62" pc="268437750" symbol="replace"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="65" pc="268437803" symbol="replace"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="69" pc="268437809" symbol="setMessage"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="70" pc="268437819" symbol="setMessage"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="74" pc="268437838" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="74" pc="268437873" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="75" pc="268437907" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="75" pc="268437924" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="77" pc="268437940" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="78" pc="268437980" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="80" pc="268437992" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="81" pc="268438005" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="82" pc="268438018" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="83" pc="268438025" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="85" pc="268438032" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="86" pc="268438057" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="87" pc="268438067" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="88" pc="268438077" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="90" pc="268438093" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="91" pc="268438106" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="92" pc="268438166" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="95" pc="268438178" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="96" pc="268438214" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="97" pc="268438224" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="98" pc="268438258" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="99" pc="268438269" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="101" pc="268438319" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="102" pc="268438326" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="107" pc="268438342" symbol="getBehavior"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="112" pc="268438370" symbol="move"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="113" pc="268438389" symbol="move"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="117" pc="268438408" symbol="menu"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="118" pc="268438436" symbol="menu"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="119" pc="268438453" symbol="menu"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="120" pc="268438475" symbol="menu"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="121" pc="268438497" symbol="menu"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="125" pc="268438576" symbol="onMenuItem"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="126" pc="268438587" symbol="onMenuItem"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="128" pc="268438613" symbol="onMenuItem"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="8" pc="268439199" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="9" pc="268439208" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="18" pc="268439235" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="140" pc="268438643" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="144" pc="268438656" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="146" pc="268438669" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="147" pc="268438687" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="148" pc="268438705" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="150" pc="268438711" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="152" pc="268438729" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="153" pc="268438752" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="155" pc="268438758" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="157" pc="268438776" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="158" pc="268438799" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="160" pc="268438805" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="162" pc="268438823" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="163" pc="268438852" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="166" pc="268438858" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="170" pc="268438864" symbol="onSwipe"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="171" pc="268438877" symbol="onSwipe"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="172" pc="268438895" symbol="onSwipe"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="173" pc="268438924" symbol="onSwipe"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="175" pc="268438930" symbol="onSwipe"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="176" pc="268438948" symbol="onSwipe"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="177" pc="268438971" symbol="onSwipe"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/TopView.mc" lineNum="179" pc="268438977" symbol="onSwipe"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/App.mc" lineNum="6" pc="268438983" symbol="onStart"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/App.mc" lineNum="13" pc="268439001" symbol="getInitialView"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/MyICNDb/source/App.mc" lineNum="14" pc="268439025" symbol="getInitialView"/>
+<entry filename="Rez" lineNum="5" pc="268439125" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="6" pc="268439134" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="7" pc="268439143" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="8" pc="268439152" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="13" pc="268439103" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="14" pc="268439112" symbol="&lt;init&gt;"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8389359" symbol="&lt;gre&gt;"/>
@@ -225,7 +228,7 @@
 <entry id="8388630" module="true" symbol="Toybox_Position"/>
 <entry id="8389354" symbol="&lt;dut&gt;"/>
 <entry id="8388821" method="true" symbol="getMailbox"/>
-<entry id="55" method="true" symbol="toView"/>
+<entry id="56" method="true" symbol="toView"/>
 <entry id="8388957" method="true" symbol="enableSensorEvents"/>
 <entry field="true" id="8388811" symbol="INVALID_HTTP_BODY_IN_REQUEST"/>
 <entry field="true" id="8388750" symbol="currentCadence"/>
@@ -235,7 +238,7 @@
 <entry id="8389019" object="true" symbol="SwipeEvent"/>
 <entry field="true" id="8389073" symbol="BEHAVIOR_PREVIOUS_PAGE"/>
 <entry field="true" id="8389155" symbol="FONT_MEDIUM"/>
-<entry id="57" symbol="showVersion"/>
+<entry id="58" symbol="showVersion"/>
 <entry id="8388663" method="true" symbol="testAdd"/>
 <entry id="8389119" method="true" symbol="getDirection"/>
 <entry field="true" id="8389475" symbol="rightPedalSmoothness"/>
@@ -463,6 +466,7 @@
 <entry id="8389342" symbol="hours"/>
 <entry id="8389129" symbol="mJustification"/>
 <entry field="true" id="8388748" symbol="averageHeartRate"/>
+<entry id="55" symbol="animator"/>
 <entry id="8389327" symbol="september"/>
 <entry id="8389132" method="true" symbol="setFont"/>
 <entry field="true" id="8389519" symbol="torque"/>
@@ -572,7 +576,7 @@
 <entry field="true" id="8389064" symbol="locX"/>
 <entry field="true" id="8389212" symbol="MSG_ID_BROADCAST_DATA"/>
 <entry field="true" id="8389430" symbol="BIKE_POWER_SENSOR_TYPE_CRANK_TORQUE_FREQUENCY"/>
-<entry id="56" method="true" symbol="breakupLines"/>
+<entry id="57" method="true" symbol="breakupLines"/>
 <entry id="8388822" method="true" symbol="setMailboxListener"/>
 <entry id="8388657" method="true" symbol="testInheritanceName"/>
 <entry id="8388826" method="true" symbol="next"/>
@@ -1171,6 +1175,48 @@
 <param id="value"/>
 <documentation/>
 </functionEntry>
+<functionEntry name="breakupLines">
+<param id="dc"/>
+<param id="font"/>
+<param id="m"/>
+<param id="maxWidth"/>
+<documentation><![CDATA[<div class="description"> Divide a long text into smaller lines with max maxWidth pixels per line...<br/> Returns an array with the lines.<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="splashIfNeeded">
+<param id="mainView"/>
+<param id="mainDelegate"/>
+<documentation><![CDATA[<div class="description"> Show the splash screen if needed.<br/><br/> Returns either '[ splash-view, null ]' or '[mainView, mainDelegate]'.<br/><br/> @pram mainView<br/> @pram mainDelegate<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="splashUnconditionally">
+<documentation><![CDATA[<div class="description"> Show the splash screen unconditionally<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="initialize">
+<param id="mainView"/>
+<param id="mainDelegate"/>
+<documentation><![CDATA[<div class="description"> Initializes the splash screen.<br/><br/> If the specified view and delegate is null, then the current<br/> view - the splash screen - is just popped...<br/><br/> @pram mainView<br/> @pram mainDelegate<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="onLayout">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="onUpdate">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="toView">
+<documentation/>
+</functionEntry>
+<functionEntry name="getBehavior">
+<documentation/>
+</functionEntry>
+<functionEntry name="initialize">
+<param id="method"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="onKey">
+<param id="evt"/>
+<documentation/>
+</functionEntry>
 <functionEntry name="initialize">
 <documentation/>
 </functionEntry>
@@ -1233,48 +1279,6 @@
 <documentation/>
 </functionEntry>
 <functionEntry name="onSwipe">
-<param id="evt"/>
-<documentation/>
-</functionEntry>
-<functionEntry name="breakupLines">
-<param id="dc"/>
-<param id="font"/>
-<param id="m"/>
-<param id="maxWidth"/>
-<documentation><![CDATA[<div class="description"> Divide a long text into smaller lines with max maxWidth pixels per line...<br/> Returns an array with the lines.<br/></div>]]></documentation>
-</functionEntry>
-<functionEntry name="splashIfNeeded">
-<param id="mainView"/>
-<param id="mainDelegate"/>
-<documentation><![CDATA[<div class="description"> Show the splash screen if needed.<br/><br/> Returns either '[ splash-view, null ]' or '[mainView, mainDelegate]'.<br/><br/> @pram mainView<br/> @pram mainDelegate<br/></div>]]></documentation>
-</functionEntry>
-<functionEntry name="splashUnconditionally">
-<documentation><![CDATA[<div class="description"> Show the splash screen unconditionally<br/></div>]]></documentation>
-</functionEntry>
-<functionEntry name="initialize">
-<param id="mainView"/>
-<param id="mainDelegate"/>
-<documentation><![CDATA[<div class="description"> Initializes the splash screen.<br/><br/> If the specified view and delegate is null, then the current<br/> view - the splash screen - is just popped...<br/><br/> @pram mainView<br/> @pram mainDelegate<br/></div>]]></documentation>
-</functionEntry>
-<functionEntry name="onLayout">
-<param id="dc"/>
-<documentation/>
-</functionEntry>
-<functionEntry name="onUpdate">
-<param id="dc"/>
-<documentation/>
-</functionEntry>
-<functionEntry name="toView">
-<documentation/>
-</functionEntry>
-<functionEntry name="getBehavior">
-<documentation/>
-</functionEntry>
-<functionEntry name="initialize">
-<param id="method"/>
-<documentation/>
-</functionEntry>
-<functionEntry name="onKey">
 <param id="evt"/>
 <documentation/>
 </functionEntry>

@@ -6,7 +6,7 @@ module Splash {
     using Toybox.Timer as Timer;
     using Toybox.Graphics as G;
 
-    const VERSION = "20150323";
+    const VERSION = "20150402";
 
     const SPLASH_TIMEOUT = 3000;
 
@@ -33,10 +33,6 @@ module Splash {
     }
 
 //! Simple SplashScreen
-//!
-//! TODO:
-//! - sun image below "My Weather"
-//! - version number
     hidden class SplashScreen extends UI.View {
         hidden var myMainView;
         hidden var myMainDelegate;
@@ -56,15 +52,19 @@ module Splash {
         }
 
         hidden var logo;
+        hidden var animator = new UI.Drawable({:locX => 0});
 
         function onLayout(dc) {
             logo = UI.loadResource(Rez.Drawables.Logo32x32);
             deviceForm = UI.loadResource(Rez.Strings.DeviceForm);
-            //Sys.println("deviceForm="+deviceForm);
+            Sys.println("deviceForm="+deviceForm);
             if (myMainView != null) {
                 timer = new Timer.Timer();
                 timer.start(method(:toView), SPLASH_TIMEOUT, false);
             }
+
+            // Animate until 1 sec left
+            UI.animate(animator, :locX, UI.ANIM_TYPE_LINEAR, -100, 0, SPLASH_TIMEOUT/1000.0-1, null);
         }
 
         function onUpdate(dc) {
@@ -81,12 +81,12 @@ module Splash {
 
             dc.drawBitmap(indent, h-logo.getHeight(), logo);
 
-            dc.drawText(dc.getWidth()/2, h/2-dc.getFontHeight(G.FONT_LARGE)/2,
+            dc.drawText(dc.getWidth()/2+animator.locX/2, h/2-dc.getFontHeight(G.FONT_LARGE)/2,
                 G.FONT_LARGE, UI.loadResource(Rez.Strings.AppName),
                 G.TEXT_JUSTIFY_CENTER | G.TEXT_JUSTIFY_VCENTER);
 
             dc.setColor(G.COLOR_LT_GRAY, G.COLOR_DK_GRAY);
-            dc.drawText(dc.getWidth()/2+30, h/2+dc.getFontHeight(G.FONT_TINY)/2+4,
+            dc.drawText(dc.getWidth()/2+30-animator.locX/4, h/2+dc.getFontHeight(G.FONT_TINY)/2+4,
                 G.FONT_TINY, "v. "+UI.loadResource(Rez.Strings.Version),
                 G.TEXT_JUSTIFY_CENTER | G.TEXT_JUSTIFY_VCENTER);
             dc.drawText(dc.getWidth()-10-indent, h-dc.getFontHeight(G.FONT_SMALL),
