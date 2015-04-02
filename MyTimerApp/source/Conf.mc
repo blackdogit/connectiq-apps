@@ -16,8 +16,9 @@ module Conf {
 
     function configure() {
         Sys.println("Conf.configure()");
-        var menu = new BDIT.SettingsUtis.SettingsMenu({:title => "Settings"}, method(:onMenuItem));
-        menu.setTitle("Settings");
+        var m = new Mediator();
+        var menu = new BDIT.SettingsUtils.SettingsMenu({:title => "Settings"}, m.method(:onMenuItem));
+        //menu.setTitle("Settings");
         menu.addItem("Repeat", :toggleRepeat);
 
         updateMenu(menu);
@@ -61,5 +62,11 @@ module Conf {
         app.setProperty("REPEAT", REPEAT);
         app.deleteProperty("TIMES");
         app.setProperty("TIMES", TIMES);
+    }
+
+    class Mediator {
+        function onMenuItem(menu, symbol) {
+            Conf.onMenuItem(menu. symbol);
+        }
     }
 }
