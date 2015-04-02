@@ -57,7 +57,6 @@ module Splash {
         function onLayout(dc) {
             logo = UI.loadResource(Rez.Drawables.Logo32x32);
             deviceForm = UI.loadResource(Rez.Strings.DeviceForm);
-            Sys.println("deviceForm="+deviceForm);
             if (myMainView != null) {
                 timer = new Timer.Timer();
                 timer.start(method(:toView), SPLASH_TIMEOUT, false);
