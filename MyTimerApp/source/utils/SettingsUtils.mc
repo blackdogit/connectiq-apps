@@ -41,7 +41,7 @@ module SettingsUtils {
         }
 
         function show() {
-            Sys.println("show");
+            //Sys.println("show");
             UI.pushView(self, getBehavior(self), UI.SLIDE_LEFT);
         }
 
@@ -143,7 +143,7 @@ module SettingsUtils {
         }
         function onKey(evt) {
             var key = evt.getKey();
-            Sys.println("key="+key);
+            //Sys.println("key="+key);
             if (key == UI.KEY_ESC) {
                 UI.popView(UI.SLIDE_RIGHT);
                 return true;
