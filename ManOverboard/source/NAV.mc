@@ -104,9 +104,7 @@ class NAVHelper {
 
     //! @param [Pos.Info]
     function onLocationCB(info) {
-        if (NAV.currentAccuracy != info.accuracy) {
-            NAV.currentAccuracy = info.accuracy;
-        }
+        NAV.currentAccuracy = info.accuracy;
         if (NAV.currentAccuracy == Pos.QUALITY_NOT_AVAILABLE) {
             UI.requestUpdate();
             return;

@@ -1,274 +1,273 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <debugInfo>
 <pcToLineNum>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="16" pc="268435458" symbol="initialize"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="20" pc="268435471" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="22" pc="268435484" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="22" pc="268435523" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="24" pc="268435529" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="25" pc="268435557" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="26" pc="268435604" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="27" pc="268435623" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="28" pc="268435675" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="30" pc="268435730" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="32" pc="268435782" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="33" pc="268435834" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="35" pc="268435890" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="44" pc="268435896" symbol="initialize"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="48" pc="268435909" symbol="onMenuItem"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="49" pc="268435920" symbol="onMenuItem"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="51" pc="268435952" symbol="onMenuItem"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="54" pc="268435984" symbol="onMenuItem"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="55" pc="268436029" symbol="onMenuItem"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="56" pc="268436071" symbol="onMenuItem"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="59" pc="268436145" symbol="onMenuItem"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="60" pc="268436173" symbol="onMenuItem"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="70" pc="268436203" symbol="initialize"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="74" pc="268436216" symbol="onNumberPicked"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="75" pc="268436241" symbol="onNumberPicked"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="15" pc="268436272" symbol="loc2DegString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="16" pc="268436291" symbol="loc2DegString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="17" pc="268436298" symbol="loc2DegString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="18" pc="268436315" symbol="loc2DegString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="20" pc="268436351" symbol="loc2DegString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="22" pc="268436390" symbol="loc2DegString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="23" pc="268436407" symbol="loc2DegString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="25" pc="268436443" symbol="loc2DegString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="27" pc="268436482" symbol="loc2DegString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="28" pc="268436506" symbol="loc2DegString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="37" pc="268436518" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="38" pc="268436531" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="40" pc="268436544" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="41" pc="268436584" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="43" pc="268436596" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="44" pc="268436616" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="46" pc="268436636" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="47" pc="268436676" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="48" pc="268436701" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="49" pc="268436708" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="50" pc="268436725" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="52" pc="268436761" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="54" pc="268436800" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="55" pc="268436817" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="57" pc="268436853" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="59" pc="268436892" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="61" pc="268436916" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="66" pc="268436986" symbol="getBehavior"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="72" pc="268437012" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="72" pc="268437034" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="73" pc="268437040" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="74" pc="268437053" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="20" pc="268437060" symbol="splashIfNeeded"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="21" pc="268437094" symbol="splashIfNeeded"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="23" pc="268437124" symbol="splashIfNeeded"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="24" pc="268437159" symbol="splashIfNeeded"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="29" pc="268437203" symbol="splashUnconditionally"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="49" pc="268437259" symbol="initialize"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="50" pc="268437269" symbol="initialize"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="56" pc="268437282" symbol="onLayout"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="58" pc="268437325" symbol="onLayout"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="59" pc="268437353" symbol="onLayout"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="63" pc="268437394" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="64" pc="268437430" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="66" pc="268437442" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="68" pc="268437496" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="72" pc="268437644" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="73" pc="268437680" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="76" pc="268437846" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="82" pc="268437942" symbol="toView"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="83" pc="268437955" symbol="toView"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="84" pc="268437999" symbol="toView"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="85" pc="268438008" symbol="toView"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="87" pc="268438020" symbol="toView"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="26" pc="268438051" symbol="getPage"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="27" pc="268438065" symbol="getPage"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="29" pc="268438095" symbol="getPage"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="30" pc="268438117" symbol="getPage"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="30" pc="268438134" symbol="getPage"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="34" pc="268438202" symbol="getPage"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="35" pc="268438224" symbol="getPage"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="35" pc="268438253" symbol="getPage"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="40" pc="268438272" symbol="getPage"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="44" pc="268438293" symbol="onPageKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="45" pc="268438306" symbol="onPageKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="46" pc="268438324" symbol="onPageKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="47" pc="268438357" symbol="onPageKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="48" pc="268438398" symbol="onPageKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="50" pc="268438422" symbol="onPageKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="51" pc="268438455" symbol="onPageKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="52" pc="268438496" symbol="onPageKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="55" pc="268438502" symbol="onPageKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="16" pc="268442656" symbol="&lt;init&gt;"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="14" pc="268438508" symbol="initialize"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="51" pc="268438521" symbol="start"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="52" pc="268438538" symbol="start"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="53" pc="268438611" symbol="start"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="55" pc="268438632" symbol="start"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="60" pc="268438665" symbol="stop"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="61" pc="268438698" symbol="stop"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="62" pc="268438716" symbol="stop"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="70" pc="268438740" symbol="calcTargetLocation"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="71" pc="268438753" symbol="calcTargetLocation"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="73" pc="268438757" symbol="calcTargetLocation"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="78" pc="268438782" symbol="setCurrentPosition"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="79" pc="268438792" symbol="setCurrentPosition"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="81" pc="268438808" symbol="setCurrentPosition"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="82" pc="268438849" symbol="setCurrentPosition"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="83" pc="268438865" symbol="setCurrentPosition"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="85" pc="268438881" symbol="setCurrentPosition"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="17" pc="268442849" symbol="&lt;init&gt;"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="45" pc="268442869" symbol="&lt;init&gt;"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="47" pc="268442878" symbol="&lt;init&gt;"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="101" pc="268438906" symbol="initialize"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="102" pc="268438937" symbol="initialize"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="107" pc="268438984" symbol="onLocationCB"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="108" pc="268439010" symbol="onLocationCB"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="110" pc="268439035" symbol="onLocationCB"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="111" pc="268439065" symbol="onLocationCB"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="112" pc="268439081" symbol="onLocationCB"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="115" pc="268439085" symbol="onLocationCB"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="116" pc="268439104" symbol="onLocationCB"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="117" pc="268439120" symbol="onLocationCB"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="120" pc="268439141" symbol="onLocationCB"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="19" pc="268439164" symbol="drawGPSQuality"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="20" pc="268439192" symbol="drawGPSQuality"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="21" pc="268439222" symbol="drawGPSQuality"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="23" pc="268439313" symbol="drawGPSQuality"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="25" pc="268439404" symbol="drawGPSQuality"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="27" pc="268439495" symbol="drawGPSQuality"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="29" pc="268439586" symbol="drawGPSQuality"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="33" pc="268439650" symbol="drawGPSQuality"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="41" pc="268439710" symbol="drawHeadingArrow"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="42" pc="268439777" symbol="drawHeadingArrow"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="43" pc="268439790" symbol="drawHeadingArrow"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="44" pc="268439803" symbol="drawHeadingArrow"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="16" pc="268442769" symbol="&lt;init&gt;"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DrawUtils.mc" lineNum="16" pc="268439925" symbol="drawArrow"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DrawUtils.mc" lineNum="17" pc="268439938" symbol="drawArrow"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DrawUtils.mc" lineNum="20" pc="268440181" symbol="drawArrow"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DrawUtils.mc" lineNum="22" pc="268440201" symbol="drawArrow"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DrawUtils.mc" lineNum="23" pc="268440231" symbol="drawArrow"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DrawUtils.mc" lineNum="28" pc="268440407" symbol="drawArrow"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DrawUtils.mc" lineNum="29" pc="268440433" symbol="drawArrow"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DrawUtils.mc" lineNum="12" pc="268443068" symbol="&lt;init&gt;"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="23" pc="268440450" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="24" pc="268440467" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="28" pc="268440479" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="29" pc="268440492" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="30" pc="268440511" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="34" pc="268440530" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="35" pc="268440569" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="39" pc="268440581" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="40" pc="268440594" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="41" pc="268440613" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="42" pc="268440632" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="45" pc="268440635" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="46" pc="268440642" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="48" pc="268440649" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="51" pc="268440720" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="53" pc="268440727" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="54" pc="268440773" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="55" pc="268440784" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="57" pc="268440807" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="60" pc="268440836" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="61" pc="268440843" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="62" pc="268440862" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="63" pc="268440873" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="65" pc="268440893" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="66" pc="268440904" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="69" pc="268440930" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="73" pc="268440959" symbol="calcDistHeading"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="81" pc="268440989" symbol="distToString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="82" pc="268440996" symbol="distToString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="83" pc="268441019" symbol="distToString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="84" pc="268441037" symbol="distToString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="85" pc="268441048" symbol="distToString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="86" pc="268441058" symbol="distToString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="89" pc="268441089" symbol="distToString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="90" pc="268441100" symbol="distToString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="91" pc="268441110" symbol="distToString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="95" pc="268441123" symbol="distToString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="96" pc="268441126" symbol="distToString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="97" pc="268441137" symbol="distToString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="99" pc="268441158" symbol="distToString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="101" pc="268441176" symbol="distToString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="103" pc="268441189" symbol="distToString"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistanceUtils.mc" lineNum="8" pc="268443035" symbol="&lt;init&gt;"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="34" pc="268441201" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="35" pc="268441214" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="38" pc="268441227" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="39" pc="268441241" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="41" pc="268441255" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="42" pc="268441265" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="43" pc="268441275" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="47" pc="268441285" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="48" pc="268441306" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="51" pc="268441321" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="54" pc="268441328" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="56" pc="268441350" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="57" pc="268441360" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="58" pc="268441367" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="59" pc="268441377" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="62" pc="268441384" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="63" pc="268441424" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="65" pc="268441436" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="66" pc="268441456" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="69" pc="268441476" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="70" pc="268441512" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="71" pc="268441547" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="72" pc="268441582" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="75" pc="268441617" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="76" pc="268441653" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="77" pc="268441653" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="78" pc="268441672" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="80" pc="268441714" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="82" pc="268441721" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="84" pc="268441753" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="85" pc="268441772" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="87" pc="268441815" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="89" pc="268441822" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="91" pc="268441854" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="93" pc="268441873" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="95" pc="268441907" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="97" pc="268441914" symbol="onUpdate"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="102" pc="268441949" symbol="getBehavior"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="108" pc="268441975" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="108" pc="268441997" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="109" pc="268442003" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="110" pc="268442016" symbol="onKey"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Conf.mc" lineNum="15" pc="268442023" symbol="onAppStart"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Conf.mc" lineNum="20" pc="268442043" symbol="onAppStop"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Conf.mc" lineNum="7" pc="268442945" symbol="&lt;init&gt;"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Conf.mc" lineNum="8" pc="268442955" symbol="&lt;init&gt;"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Conf.mc" lineNum="10" pc="268442965" symbol="&lt;init&gt;"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/BaseBehavior.mc" lineNum="13" pc="268442063" symbol="nextPage"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/BaseBehavior.mc" lineNum="14" pc="268442096" symbol="nextPage"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/BaseBehavior.mc" lineNum="17" pc="268442140" symbol="previousPage"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/BaseBehavior.mc" lineNum="18" pc="268442173" symbol="previousPage"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/App.mc" lineNum="8" pc="268442218" symbol="onStart"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/App.mc" lineNum="9" pc="268442239" symbol="onStart"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/App.mc" lineNum="11" pc="268442281" symbol="onStart"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/App.mc" lineNum="12" pc="268442301" symbol="onStart"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/App.mc" lineNum="14" pc="268442321" symbol="onStart"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/App.mc" lineNum="18" pc="268442342" symbol="onStop"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/App.mc" lineNum="19" pc="268442362" symbol="onStop"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/App.mc" lineNum="23" pc="268442385" symbol="getInitialView"/>
-<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/App.mc" lineNum="25" pc="268442418" symbol="getInitialView"/>
-<entry filename="Rez" lineNum="5" pc="268442544" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="6" pc="268442553" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="7" pc="268442562" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="8" pc="268442571" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="9" pc="268442580" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="10" pc="268442589" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="11" pc="268442598" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="12" pc="268442607" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="17" pc="268442477" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="18" pc="268442486" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="19" pc="268442495" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="20" pc="268442504" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="21" pc="268442513" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="22" pc="268442522" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="23" pc="268442531" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DrawUtils.mc" lineNum="16" pc="268435458" symbol="drawArrow"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DrawUtils.mc" lineNum="17" pc="268435471" symbol="drawArrow"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DrawUtils.mc" lineNum="20" pc="268435714" symbol="drawArrow"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DrawUtils.mc" lineNum="22" pc="268435734" symbol="drawArrow"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DrawUtils.mc" lineNum="23" pc="268435764" symbol="drawArrow"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DrawUtils.mc" lineNum="28" pc="268435940" symbol="drawArrow"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DrawUtils.mc" lineNum="29" pc="268435966" symbol="drawArrow"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DrawUtils.mc" lineNum="12" pc="268443039" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="23" pc="268435983" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="24" pc="268436000" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="28" pc="268436012" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="29" pc="268436025" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="30" pc="268436044" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="34" pc="268436063" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="35" pc="268436102" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="39" pc="268436114" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="40" pc="268436127" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="41" pc="268436146" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="42" pc="268436165" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="45" pc="268436168" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="46" pc="268436175" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="48" pc="268436182" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="51" pc="268436253" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="53" pc="268436260" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="54" pc="268436306" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="55" pc="268436317" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="57" pc="268436340" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="60" pc="268436369" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="61" pc="268436376" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="62" pc="268436395" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="63" pc="268436406" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="65" pc="268436426" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="66" pc="268436437" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="69" pc="268436463" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="73" pc="268436492" symbol="calcDistHeading"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="81" pc="268436522" symbol="distToString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="82" pc="268436529" symbol="distToString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="83" pc="268436552" symbol="distToString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="84" pc="268436570" symbol="distToString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="85" pc="268436581" symbol="distToString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="86" pc="268436591" symbol="distToString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="89" pc="268436622" symbol="distToString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="90" pc="268436633" symbol="distToString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="91" pc="268436643" symbol="distToString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="95" pc="268436656" symbol="distToString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="96" pc="268436659" symbol="distToString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="97" pc="268436670" symbol="distToString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="99" pc="268436691" symbol="distToString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="101" pc="268436709" symbol="distToString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="103" pc="268436722" symbol="distToString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/utils/DistanceUtils.mc" lineNum="8" pc="268443006" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="16" pc="268436728" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="20" pc="268436741" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="22" pc="268436754" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="22" pc="268436793" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="24" pc="268436799" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="25" pc="268436827" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="26" pc="268436874" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="27" pc="268436893" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="28" pc="268436945" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="30" pc="268437000" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="32" pc="268437052" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="33" pc="268437104" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="35" pc="268437160" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="44" pc="268437166" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="48" pc="268437179" symbol="onMenuItem"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="49" pc="268437190" symbol="onMenuItem"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="51" pc="268437222" symbol="onMenuItem"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="54" pc="268437254" symbol="onMenuItem"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="55" pc="268437299" symbol="onMenuItem"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="56" pc="268437341" symbol="onMenuItem"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="59" pc="268437415" symbol="onMenuItem"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="60" pc="268437443" symbol="onMenuItem"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="70" pc="268437473" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="74" pc="268437486" symbol="onNumberPicked"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/ViewMenu.mc" lineNum="75" pc="268437511" symbol="onNumberPicked"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="15" pc="268437542" symbol="loc2DegString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="16" pc="268437561" symbol="loc2DegString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="17" pc="268437568" symbol="loc2DegString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="18" pc="268437585" symbol="loc2DegString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="20" pc="268437621" symbol="loc2DegString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="22" pc="268437660" symbol="loc2DegString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="23" pc="268437677" symbol="loc2DegString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="25" pc="268437713" symbol="loc2DegString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="27" pc="268437752" symbol="loc2DegString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Utils.mc" lineNum="28" pc="268437776" symbol="loc2DegString"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="37" pc="268437788" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="38" pc="268437801" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="40" pc="268437814" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="41" pc="268437854" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="43" pc="268437866" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="44" pc="268437886" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="46" pc="268437906" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="47" pc="268437946" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="48" pc="268437971" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="49" pc="268437978" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="50" pc="268437995" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="52" pc="268438031" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="54" pc="268438070" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="55" pc="268438087" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="57" pc="268438123" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="59" pc="268438162" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="61" pc="268438186" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="66" pc="268438256" symbol="getBehavior"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="72" pc="268438282" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="72" pc="268438304" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="73" pc="268438310" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/TargetView.mc" lineNum="74" pc="268438323" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="20" pc="268438330" symbol="splashIfNeeded"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="21" pc="268438364" symbol="splashIfNeeded"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="23" pc="268438394" symbol="splashIfNeeded"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="24" pc="268438429" symbol="splashIfNeeded"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="29" pc="268438473" symbol="splashUnconditionally"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="49" pc="268438529" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="50" pc="268438539" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="56" pc="268438552" symbol="onLayout"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="58" pc="268438595" symbol="onLayout"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="59" pc="268438623" symbol="onLayout"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="63" pc="268438664" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="64" pc="268438700" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="66" pc="268438712" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="68" pc="268438766" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="72" pc="268438914" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="73" pc="268438950" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="76" pc="268439116" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="82" pc="268439212" symbol="toView"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="83" pc="268439225" symbol="toView"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="84" pc="268439269" symbol="toView"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="85" pc="268439278" symbol="toView"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/SplashScreen.mc" lineNum="87" pc="268439290" symbol="toView"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="26" pc="268439321" symbol="getPage"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="27" pc="268439335" symbol="getPage"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="29" pc="268439365" symbol="getPage"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="30" pc="268439387" symbol="getPage"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="30" pc="268439404" symbol="getPage"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="34" pc="268439472" symbol="getPage"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="35" pc="268439494" symbol="getPage"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="35" pc="268439523" symbol="getPage"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="40" pc="268439542" symbol="getPage"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="44" pc="268439563" symbol="onPageKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="45" pc="268439576" symbol="onPageKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="46" pc="268439594" symbol="onPageKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="47" pc="268439627" symbol="onPageKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="48" pc="268439668" symbol="onPageKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="50" pc="268439692" symbol="onPageKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="51" pc="268439725" symbol="onPageKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="52" pc="268439766" symbol="onPageKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="55" pc="268439772" symbol="onPageKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/PageManager.mc" lineNum="16" pc="268442627" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="14" pc="268439778" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="51" pc="268439791" symbol="start"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="52" pc="268439808" symbol="start"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="53" pc="268439881" symbol="start"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="55" pc="268439902" symbol="start"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="60" pc="268439935" symbol="stop"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="61" pc="268439968" symbol="stop"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="62" pc="268439986" symbol="stop"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="70" pc="268440010" symbol="calcTargetLocation"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="71" pc="268440023" symbol="calcTargetLocation"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="73" pc="268440027" symbol="calcTargetLocation"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="78" pc="268440052" symbol="setCurrentPosition"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="79" pc="268440062" symbol="setCurrentPosition"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="81" pc="268440078" symbol="setCurrentPosition"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="82" pc="268440119" symbol="setCurrentPosition"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="83" pc="268440135" symbol="setCurrentPosition"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="85" pc="268440151" symbol="setCurrentPosition"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="17" pc="268442820" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="45" pc="268442840" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="47" pc="268442849" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="101" pc="268440176" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="102" pc="268440207" symbol="initialize"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="107" pc="268440254" symbol="onLocationCB"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="108" pc="268440276" symbol="onLocationCB"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="109" pc="268440306" symbol="onLocationCB"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="110" pc="268440322" symbol="onLocationCB"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="113" pc="268440326" symbol="onLocationCB"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="114" pc="268440345" symbol="onLocationCB"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="115" pc="268440361" symbol="onLocationCB"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/NAV.mc" lineNum="118" pc="268440382" symbol="onLocationCB"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="19" pc="268440405" symbol="drawGPSQuality"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="20" pc="268440433" symbol="drawGPSQuality"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="21" pc="268440463" symbol="drawGPSQuality"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="23" pc="268440554" symbol="drawGPSQuality"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="25" pc="268440645" symbol="drawGPSQuality"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="27" pc="268440736" symbol="drawGPSQuality"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="29" pc="268440827" symbol="drawGPSQuality"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="33" pc="268440891" symbol="drawGPSQuality"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="41" pc="268440951" symbol="drawHeadingArrow"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="42" pc="268441018" symbol="drawHeadingArrow"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="43" pc="268441031" symbol="drawHeadingArrow"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="44" pc="268441044" symbol="drawHeadingArrow"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/LocalDrawUtils.mc" lineNum="16" pc="268442740" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="34" pc="268441172" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="35" pc="268441185" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="38" pc="268441198" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="39" pc="268441212" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="41" pc="268441226" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="42" pc="268441236" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="43" pc="268441246" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="47" pc="268441256" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="48" pc="268441277" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="51" pc="268441292" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="54" pc="268441299" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="56" pc="268441321" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="57" pc="268441331" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="58" pc="268441338" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="59" pc="268441348" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="62" pc="268441355" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="63" pc="268441395" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="65" pc="268441407" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="66" pc="268441427" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="69" pc="268441447" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="70" pc="268441483" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="71" pc="268441518" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="72" pc="268441553" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="75" pc="268441588" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="76" pc="268441624" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="77" pc="268441624" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="78" pc="268441643" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="80" pc="268441685" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="82" pc="268441692" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="84" pc="268441724" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="85" pc="268441743" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="87" pc="268441786" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="89" pc="268441793" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="91" pc="268441825" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="93" pc="268441844" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="95" pc="268441878" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="97" pc="268441885" symbol="onUpdate"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="102" pc="268441920" symbol="getBehavior"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="108" pc="268441946" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="108" pc="268441968" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="109" pc="268441974" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/DistSpeedView.mc" lineNum="110" pc="268441987" symbol="onKey"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Conf.mc" lineNum="15" pc="268441994" symbol="onAppStart"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Conf.mc" lineNum="20" pc="268442014" symbol="onAppStop"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Conf.mc" lineNum="7" pc="268442916" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Conf.mc" lineNum="8" pc="268442926" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/Conf.mc" lineNum="10" pc="268442936" symbol="&lt;init&gt;"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/BaseBehavior.mc" lineNum="13" pc="268442034" symbol="nextPage"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/BaseBehavior.mc" lineNum="14" pc="268442067" symbol="nextPage"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/BaseBehavior.mc" lineNum="17" pc="268442111" symbol="previousPage"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/BaseBehavior.mc" lineNum="18" pc="268442144" symbol="previousPage"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/App.mc" lineNum="8" pc="268442189" symbol="onStart"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/App.mc" lineNum="9" pc="268442210" symbol="onStart"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/App.mc" lineNum="11" pc="268442252" symbol="onStart"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/App.mc" lineNum="12" pc="268442272" symbol="onStart"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/App.mc" lineNum="14" pc="268442292" symbol="onStart"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/App.mc" lineNum="18" pc="268442313" symbol="onStop"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/App.mc" lineNum="19" pc="268442333" symbol="onStop"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/App.mc" lineNum="23" pc="268442356" symbol="getInitialView"/>
+<entry filename="/ConnectIQ/Git/connectiq-apps/ManOverboard/source/App.mc" lineNum="25" pc="268442389" symbol="getInitialView"/>
+<entry filename="Rez" lineNum="5" pc="268442515" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="6" pc="268442524" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="7" pc="268442533" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="8" pc="268442542" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="9" pc="268442551" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="10" pc="268442560" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="11" pc="268442569" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="12" pc="268442578" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="17" pc="268442448" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="18" pc="268442457" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="19" pc="268442466" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="20" pc="268442475" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="21" pc="268442484" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="22" pc="268442493" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="23" pc="268442502" symbol="&lt;init&gt;"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8389359" symbol="&lt;gre&gt;"/>
@@ -567,7 +566,7 @@
 <entry id="8388824" method="true" symbol="transmit"/>
 <entry field="true" id="8389170" symbol="COLOR_PINK"/>
 <entry id="99" symbol="timerVal"/>
-<entry id="79" module="true" symbol="Splash"/>
+<entry id="80" module="true" symbol="Splash"/>
 <entry id="7" module="true" symbol="globals_Rez_Strings"/>
 <entry id="8388884" object="true" symbol="GeometryIterator"/>
 <entry field="true" id="8389462" symbol="WEIGHT_SCALE_STATUS_CNT"/>
@@ -831,7 +830,7 @@
 <entry field="true" id="8388803" symbol="BLE_SERVER_TIMEOUT"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
 <entry id="8389535" method="true" symbol="persistLocation"/>
-<entry id="18" module="true" symbol="ManOverboard"/>
+<entry id="19" module="true" symbol="ManOverboard"/>
 <entry id="8389094" method="true" symbol="setTitle"/>
 <entry field="true" id="8389074" symbol="BEHAVIOR_ON_MENU"/>
 <entry id="41" object="true" symbol="DistSpeedView"/>
@@ -954,7 +953,7 @@
 <entry id="8388647" module="true" symbol="UserProfile"/>
 <entry field="true" id="8389011" symbol="CLICK_TYPE_TAP"/>
 <entry field="true" id="8388953" symbol="SENSOR_FOOTPOD"/>
-<entry id="80" module="true" symbol="DistanceUtils"/>
+<entry id="79" module="true" symbol="DistanceUtils"/>
 <entry field="true" id="8389071" symbol="BEHAVIOR_NONE"/>
 <entry id="8388623" module="true" symbol="Toybox_Sensor"/>
 <entry id="8389397" object="true" symbol="DeviceSettings"/>
@@ -1269,7 +1268,7 @@
 <entry field="true" id="8389388" symbol="FONT_NUMBER_THAI_HOT"/>
 <entry id="8389434" object="true" symbol="CalculatedTorque"/>
 <entry id="8389351" symbol="&lt;valyrian&gt;"/>
-<entry id="19" module="true" symbol="BDIT"/>
+<entry id="18" module="true" symbol="BDIT"/>
 <entry field="true" id="8389402" symbol="distanceUnits"/>
 <entry id="8389492" method="true" symbol="getUserProfile"/>
 <entry id="8389021" method="true" symbol="loadResource"/>
@@ -1298,6 +1297,24 @@
 <localVars/>
 <annotations/>
 <functions>
+<functionEntry name="drawArrow">
+<param id="dc"/>
+<param id="heading"/>
+<param id="size"/>
+<param id="color"/>
+<param id="x"/>
+<param id="y"/>
+<documentation><![CDATA[<div class="description"> Draws an arrow that points in the specied direction<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="calcDistHeading">
+<param id="start"/>
+<param id="end"/>
+<documentation><![CDATA[<div class="description"> 2 pi R/2 pi<br/> Calculates and return the distance and heading between two Location object.<br/> Handles the case, where any of the objects are null or designates no location in 920xt or the simulartor.<br/> Returns [null, null] in this case.<br/><br/> <div class="param"> [Toybox.Position.Location] start the start location</div><br/> <div class="param"> [Toybox.Position.Location] end the end location</div><br/> Returns s [[Float, Float]] the distance (in meters) and the heading (in radians) from start to end<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="distToString">
+<param id="dist"/>
+<documentation><![CDATA[<div class="description"> Converts the specified distance to a string<br/> <div class="param"> dist [Float]: the distance to convert (in meters)</div><br/> Returns s [String]: the converted distance<br/></div>]]></documentation>
+</functionEntry>
 <functionEntry name="initialize">
 <param id="view"/>
 <documentation/>
@@ -1415,24 +1432,6 @@
 <functionEntry name="drawHeadingArrow">
 <param id="dc"/>
 <documentation><![CDATA[<div class="description"> Show arrow if heading and current heading is given<br/></div>]]></documentation>
-</functionEntry>
-<functionEntry name="drawArrow">
-<param id="dc"/>
-<param id="heading"/>
-<param id="size"/>
-<param id="color"/>
-<param id="x"/>
-<param id="y"/>
-<documentation><![CDATA[<div class="description"> Draws an arrow that points in the specied direction<br/></div>]]></documentation>
-</functionEntry>
-<functionEntry name="calcDistHeading">
-<param id="start"/>
-<param id="end"/>
-<documentation><![CDATA[<div class="description"> 2 pi R/2 pi<br/> Calculates and return the distance and heading between two Location object.<br/> Handles the case, where any of the objects are null or designates no location in 920xt or the simulartor.<br/> Returns [null, null] in this case.<br/><br/> <div class="param"> [Toybox.Position.Location] start the start location</div><br/> <div class="param"> [Toybox.Position.Location] end the end location</div><br/> Returns s [[Float, Float]] the distance (in meters) and the heading (in radians) from start to end<br/></div>]]></documentation>
-</functionEntry>
-<functionEntry name="distToString">
-<param id="dist"/>
-<documentation><![CDATA[<div class="description"> Converts the specified distance to a string<br/> <div class="param"> dist [Float]: the distance to convert (in meters)</div><br/> Returns s [String]: the converted distance<br/></div>]]></documentation>
 </functionEntry>
 <functionEntry name="initialize">
 <documentation/>
