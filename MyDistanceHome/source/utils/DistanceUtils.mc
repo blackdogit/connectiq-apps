@@ -3,7 +3,7 @@ using Toybox.Math;
 
 module BDIT {
 module DistanceUtils {
-    const VERSION = "1.0.1.20150328";
+    const VERSION = "20150328";
 
     var NO_DATA;
 
