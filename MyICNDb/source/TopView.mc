@@ -34,7 +34,13 @@ class TopView extends UI.View {
     }
 
     function icndbCB(code, data) {
-        //Sys.println("icndbCB(..., "+code+")");
+        if (data == null) {
+            setMessage("Cannot call Norris... His says error "+code+".");
+            return;
+        }
+        if (code != 200) {
+            Sys.println("icndbCB("+code+", "+data+")");
+        }
         var m = data["value"]["joke"];
 
         // Remove special HTML quoting
