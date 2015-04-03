@@ -9,6 +9,7 @@ using Toybox.Math;
 module State {
     var currentAccuracy = Pos.QUALITY_NOT_AVAILABLE;
     var currentHeading = 0;
+    var currentHeadingDeg = 0;
 
     var fg = G.COLOR_BLACK;
     var bg = G.COLOR_WHITE;
@@ -23,7 +24,7 @@ class TopView extends UI.View {
         Pos.enableLocationEvents(Pos.LOCATION_CONTINUOUS, method(:onLocation));
     }
 
-    var layouts = [ new DegLayout(), new SimpleArrowLayout(), new Rose1Layout(), new PointLayout(), new Circle1Layout() ];
+    var layouts = [ new Circle2Layout(), new Circle1Layout(), new DegLayout(), new SimpleArrowLayout(), new Rose1Layout(), new PointLayout() ];
     var layoutNo = 0;
 
     var L = -1;
@@ -41,6 +42,7 @@ class TopView extends UI.View {
         State.currentAccuracy = info.accuracy;
         State.currentHeading = -info.heading;
         if (State.currentHeading < 0) { State.currentHeading = State.currentHeading+2*Math.PI; }
+        State.currentHeadingDeg = (State.currentHeading/Math.PI*180).toNumber();
 
         UI.requestUpdate();
     }

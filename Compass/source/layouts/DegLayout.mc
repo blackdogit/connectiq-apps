@@ -7,8 +7,6 @@ using Toybox.Math;
 
 class DegLayout {
     function draw(dc) {
-        var deg = (State.currentHeading/Math.PI*180).toNumber();
-
-        dc.drawText(dc.getWidth()/2, dc.getHeight()/2, G.FONT_LARGE, deg+"°", G.TEXT_JUSTIFY_CENTER|G.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(dc.getWidth()/2, dc.getHeight()/2, G.FONT_LARGE, State.currentHeadingDeg+"°", G.TEXT_JUSTIFY_CENTER|G.TEXT_JUSTIFY_VCENTER);
     }
 }

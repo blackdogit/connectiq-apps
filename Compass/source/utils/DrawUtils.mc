@@ -32,6 +32,34 @@ module DrawUtils {
         //Sys.println("<<dA");
     }
 
+    //! Fast (but kind of bad-looking) arc drawing.
+    //! From http://stackoverflow.com/questions/8887686/arc-subdivision-algorithm/8889666#8889666
+    //! TODO: Once we have drawArc, use that instead.
+    //! Based on https://github.com/CodyJung/connectiq-apps/blob/master/ArcWatch/source/ArcWatchView.mc
+    function drawArc(dc, x, y, radius, from, to, color, width) {
+        // Defaults:
+        if (from == null) { from = 0; }
+        if (to == null) { to = 2*Math.PI; }
+        if (color == null) { color = G.COLOR_BLACK; }
+        if (width == null) { width = 3; }
+
+        dc.setColor(color, G.COLOR_TRANSPARENT);
+
+        var iters = 300*((to-from)/(2*Math.PI))+1;
+        var dx = radius*Math.cos(from);
+        var dy = -radius*Math.sin(from);
+
+        var m = new BDIT.DrawUtils.TM2D();
+        m.rotate(-(to-from)/(iters-1));
+
+        for(var i=0; i < iters; ++i) {
+            dc.fillCircle(x + dx, y + dy, width);
+            var d = m.t(dx, dy);
+            dx = d[0];
+            dy = d[1];
+        }
+    }
+
     //! 2-d transformation matrix
     //! Calculations are in float as double results in an OOM after a while
     class TM2D {
