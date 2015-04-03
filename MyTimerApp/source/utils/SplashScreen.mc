@@ -6,7 +6,7 @@ module Splash {
     using Toybox.Timer as Timer;
     using Toybox.Graphics as G;
 
-    const VERSION = "20150402";
+    const VERSION = "20150403";
 
     const SPLASH_TIMEOUT = 3000;
 
@@ -18,7 +18,7 @@ module Splash {
 //! @pram mainDelegate
     function splashIfNeeded(mainView, mainDelegate) {
         var v = App.getApp().getProperty("splashShown");
-        if (v == VERSION) {
+        if (VERSION.equals(v)) {
             return [mainView, mainDelegate];
         }
         App.getApp().setProperty("splashShown", VERSION);
@@ -57,7 +57,6 @@ module Splash {
         function onLayout(dc) {
             logo = UI.loadResource(Rez.Drawables.Logo32x32);
             deviceForm = UI.loadResource(Rez.Strings.DeviceForm);
-            Sys.println("deviceForm="+deviceForm);
             if (myMainView != null) {
                 timer = new Timer.Timer();
                 timer.start(method(:toView), SPLASH_TIMEOUT, false);
