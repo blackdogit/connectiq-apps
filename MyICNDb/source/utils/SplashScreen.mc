@@ -17,11 +17,12 @@ module Splash {
 //! @pram mainView
 //! @pram mainDelegate
     function splashIfNeeded(mainView, mainDelegate) {
-        var v = App.getApp().getProperty("splashShown");
-        if (VERSION.equals(v)) {
+        var app = App.getApp();
+        var v = app.getProperty("splashShown");
+        if (v != null && v.equals(VERSION)) {
             return [mainView, mainDelegate];
         }
-        App.getApp().setProperty("splashShown", VERSION);
+        app.setProperty("splashShown", VERSION);
         var ss = new SplashScreen(mainView, mainDelegate);
         return [ ss, ss.getBehavior() ];
     }
