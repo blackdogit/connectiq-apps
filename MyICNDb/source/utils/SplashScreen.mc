@@ -8,12 +8,6 @@ module Splash {
 
     const VERSION = "20150405";
 
-    //! initial timeout before the splash screen is animated
-    const START_TIMEOUT = 500;
-
-    //! initial timeout before the splash screen animation ends
-    const ANIMATE_TIMEOUT = 2000;
-
     //! After this time, the splash screen is removed if not shown unconditionally
     const SPLASH_TIMEOUT = 3000;
 
@@ -44,7 +38,6 @@ module Splash {
     hidden class SplashScreen extends UI.View {
         hidden var myMainView;
         hidden var myMainDelegate;
-        hidden var startTime;
         hidden var timer;
 
         //! Initializes the splash screen.
@@ -66,7 +59,7 @@ module Splash {
         hidden var deviceForm;
 
         // Animator for the texts (locX: -100 -> 0)
-        hidden var animator = new UI.Drawable({:locX => -100});
+        hidden var animator = new UI.Drawable({:locX => 0});
 
         function onLayout(dc) {
             appName = UI.loadResource(Rez.Strings.AppName);
@@ -74,34 +67,14 @@ module Splash {
             logo = UI.loadResource(Rez.Drawables.Logo32x32);
             deviceForm = UI.loadResource(Rez.Strings.DeviceForm);
 
-            startTime = Sys.getTimer();
-            timer = new Timer.Timer();
-            timer.start(method(:onTick), 100, true);
+            if (myMainView != null) {
+                timer = new Timer.Timer();
+                timer.start(method(:toView), SPLASH_TIMEOUT, false);
+            }
 
             // Animate until 1 sec left
             //UI.animate(animator, :locX, UI.ANIM_TYPE_LINEAR, -100, 0, SPLASH_TIMEOUT/1000.0-1, null);
         }
-
-        function onTick() {
-            var t = Sys.getTimer()-startTime;
-            if (t < START_TIMEOUT) { return; }
-
-            if (t < ANIMATE_TIMEOUT) {
-                animator.locX = 100.0*(t-START_TIMEOUT)/(ANIMATE_TIMEOUT-START_TIMEOUT)-100;
-                fullUpdate = false;
-                UI.requestUpdate();
-                return;
-            }
-            fullUpdate = true;
-
-            if (t > SPLASH_TIMEOUT && myMainView != null) {
-                toView();
-            }
-        }
-
-        //! true first time onUpdate is called
-        //! Used to optimate the drawing
-        var fullUpdate = true;
 
         function onUpdate(dc) {
             var deltaX = animator.locX;
@@ -117,12 +90,8 @@ module Splash {
             }
 
             dc.setColor(G.COLOR_DK_GRAY, G.COLOR_DK_GRAY);
-            if (fullUpdate) {
-                dc.clear();
-                dc.drawBitmap(indent, h-logo.getHeight(), logo);
-            } else {
-                dc.fillRectangle(0, h/2-dc.getFontHeight(G.FONT_LARGE), w, dc.getFontHeight(G.FONT_LARGE)+dc.getFontHeight(G.FONT_TINY)+4);
-            }
+            dc.clear();
+            dc.drawBitmap(indent, h-logo.getHeight(), logo);
 
             dc.setColor(G.COLOR_WHITE, G.COLOR_DK_GRAY);
             dc.drawText(w/2+deltaX/2, h/2-dc.getFontHeight(G.FONT_LARGE)/2,
@@ -133,11 +102,9 @@ module Splash {
             dc.drawText(w/2+30-deltaX/4, h/2+dc.getFontHeight(G.FONT_TINY)/2+4,
                 G.FONT_TINY, "v. "+UI.loadResource(Rez.Strings.Version),
                 G.TEXT_JUSTIFY_CENTER | G.TEXT_JUSTIFY_VCENTER);
-            if (fullUpdate) {
-                dc.drawText(w-10-indent, h-dc.getFontHeight(G.FONT_SMALL),
-                    G.FONT_SMALL, "by Black Dog IT",
-                    G.TEXT_JUSTIFY_RIGHT);
-            }
+            dc.drawText(w-10-indent, h-dc.getFontHeight(G.FONT_SMALL),
+                G.FONT_SMALL, "by Black Dog IT",
+                G.TEXT_JUSTIFY_RIGHT);
         }
 
         function toView() {
