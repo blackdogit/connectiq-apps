@@ -6,17 +6,22 @@ module Splash {
     using Toybox.Timer as Timer;
     using Toybox.Graphics as G;
 
-    const VERSION = "20150405";
+    const VERSION = "20150407";
 
-    //! After this time, the splash screen is removed if not shown unconditionally
-    const SPLASH_TIMEOUT = 3000;
+    //! The timeout is divided into three parts:
+    //! 1) an initial static pause (500 ms) used to allow the system SLIDE_DOWN for widgets
+    //! 2) an movement phase (2000 ms) where the texts move
+    //! 3) an final static phase (500 ms)
+    const PHASE1 = 500;
+    const PHASE2 = 2000;
+    const PHASE3 = 500;
 
-//! Show the splash screen if needed.
-//!
-//! Returns either '[ splash-view, null ]' or '[mainView, mainDelegate]'.
-//!
-//! @pram mainView
-//! @pram mainDelegate
+    //! Show the splash screen if needed.
+    //!
+    //! Returns either '[ splash-view, null ]' or '[mainView, mainDelegate]'.
+    //!
+    //! @pram mainView
+    //! @pram mainDelegate
     function splashIfNeeded(mainView, mainDelegate) {
         var app = App.getApp();
         var v = app.getProperty("splashShown");
@@ -36,6 +41,7 @@ module Splash {
 
 //! Simple SplashScreen
     hidden class SplashScreen extends UI.View {
+        const ANIMATE = true;
         hidden var myMainView;
         hidden var myMainDelegate;
         hidden var timer;
@@ -58,26 +64,58 @@ module Splash {
         hidden var appVersion;
         hidden var deviceForm;
 
-        // Animator for the texts (locX: -100 -> 0)
-        hidden var animator = new UI.Drawable({:locX => 0});
+        // Animator for the texts (locX: 0.0 -> 1.0)
+        hidden var animator = new UI.Drawable({:locX => 0.0});
+
+        var fontLargeHeight;
+        var fontSmallHeight;
+        var fontTinyHeight;
 
         function onLayout(dc) {
             appName = UI.loadResource(Rez.Strings.AppName);
-            appVersion = UI.loadResource(Rez.Strings.Version);
+            appVersion = "v. "+UI.loadResource(Rez.Strings.Version);
             logo = UI.loadResource(Rez.Drawables.Logo32x32);
             deviceForm = UI.loadResource(Rez.Strings.DeviceForm);
 
-            if (myMainView != null) {
-                timer = new Timer.Timer();
-                timer.start(method(:toView), SPLASH_TIMEOUT, false);
-            }
+            fontLargeHeight = dc.getFontHeight(G.FONT_LARGE);
+            fontSmallHeight = dc.getFontHeight(G.FONT_SMALL);
+            fontTinyHeight = dc.getFontHeight(G.FONT_TINY);
 
-            // Animate until 1 sec left
-            //UI.animate(animator, :locX, UI.ANIM_TYPE_LINEAR, -100, 0, SPLASH_TIMEOUT/1000.0-1, null);
+            phase1();
         }
 
+        function phase1() {
+            Sys.println("phase1()");
+            if (ANIMATE) {
+                timer = new Timer.Timer();
+                timer.start(method(:phase2), PHASE1, false);
+            } else {
+                phase3();
+            }
+        }
+
+        function phase2() {
+            Sys.println("phase2()");
+            timer = null;
+            updateAll = false;
+            UI.animate(animator, :locX, UI.ANIM_TYPE_LINEAR, 0.0, 1.0, PHASE2/1000.0, method(:phase3));
+        }
+
+        function phase3() {
+            Sys.println("phase3()");
+            updateAll = true;
+            animator.locX = 1.0;
+            if (myMainView != null) {
+                timer = new Timer.Timer();
+                timer.start(method(:finish), PHASE1+PHASE2+PHASE3, false);
+            }
+        }
+
+        //! Whether or not to perform a complete update of the screen
+        var updateAll = true;
+
         function onUpdate(dc) {
-            var deltaX = animator.locX;
+            var deltaX = animator.locX; // 0-> 1
             Sys.println(Sys.getTimer()+": deltaX="+deltaX);
 
             var h = dc.getHeight();
@@ -90,38 +128,46 @@ module Splash {
             }
 
             dc.setColor(G.COLOR_DK_GRAY, G.COLOR_DK_GRAY);
-            dc.clear();
-            dc.drawBitmap(indent, h-logo.getHeight(), logo);
+            if (updateAll) {
+                dc.clear();
+                dc.drawBitmap(indent, h-logo.getHeight(), logo);
+            } else {
+                dc.fillRectangle(0, h/2-fontLargeHeight, w, fontLargeHeight+fontTinyHeight+4);
+            }
 
             dc.setColor(G.COLOR_WHITE, G.COLOR_DK_GRAY);
-            dc.drawText(w/2+deltaX/2, h/2-dc.getFontHeight(G.FONT_LARGE)/2,
+            dc.drawText(w/2-30*(1-deltaX), h/2-fontLargeHeight/2,
                 G.FONT_LARGE, appName,
                 G.TEXT_JUSTIFY_CENTER | G.TEXT_JUSTIFY_VCENTER);
 
             dc.setColor(G.COLOR_LT_GRAY, G.COLOR_DK_GRAY);
-            dc.drawText(w/2+30-deltaX/4, h/2+dc.getFontHeight(G.FONT_TINY)/2+4,
-                G.FONT_TINY, "v. "+UI.loadResource(Rez.Strings.Version),
+            dc.drawText(w/2+50-20*deltaX, h/2+fontTinyHeight/2+4,
+                G.FONT_TINY, appVersion,
                 G.TEXT_JUSTIFY_CENTER | G.TEXT_JUSTIFY_VCENTER);
-            dc.drawText(w-10-indent, h-dc.getFontHeight(G.FONT_SMALL),
-                G.FONT_SMALL, "by Black Dog IT",
-                G.TEXT_JUSTIFY_RIGHT);
+            if (updateAll) {
+                dc.drawText(w-10-indent, h-fontSmallHeight,
+                    G.FONT_SMALL, "by Black Dog IT",
+                    G.TEXT_JUSTIFY_RIGHT);
+            }
         }
 
-        function toView() {
+        function finish() {
+            Sys.println("finish()");
             if (timer != null) {
                 timer.stop();
+                timer = null;
             }
             if (myMainView != null) {
                 UI.switchToView(myMainView, myMainDelegate, UI.SLIDE_IMMEDIATE);
                 myMainView = null;
                 myMainDelegate = null;
             } else {
-                UI.popView(UI.SLIDE_UP);
+                UI.popView(UI.SLIDE_IMMEDIATE);
             }
         }
 
         function getBehavior() {
-            return new SplashScreenBehavior(method(:toView));
+            return new SplashScreenBehavior(method(:finish));
         }
     }
 
@@ -131,8 +177,9 @@ module Splash {
             myMethod = method;
         }
         function onKey(evt) {
-            if (evt.getKey == UI.KEY_ENTER) {
-                method.invoke();
+            var key = evt.getKey();
+            if (key == UI.KEY_ENTER || key == UI.KEY_ESC) {
+                myMethod.invoke();
                 return true;
             }
             return false;

@@ -12,6 +12,6 @@ class SimpleArrowLayout {
         var size = w;
         if (h < w) { size = h; }
 
-        BDIT.BDIT.DrawUtils.drawArrow(dc, State.currentHeading, size*.4, G.COLOR_GREEN, w/2, h/2);
+        BDIT.BDIT.DrawUtils.drawArrow(dc, -State.currentHeading, size*.4, G.COLOR_GREEN, w/2, h/2);
     }
 }

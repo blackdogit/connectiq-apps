@@ -4,6 +4,7 @@ using Toybox.WatchUi as Ui;
 class App extends App.AppBase {
 
     function onStart() {
+        //clearProperties();
     }
 
     function onStop() {

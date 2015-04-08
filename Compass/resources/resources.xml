@@ -1,6 +1,6 @@
 <resources>
     <string id="AppName">Compass</string>
-    <string id="Version">201503xx</string>
+    <string id="Version">20150408</string>
 
     <string id="Device">unknown</string>
     <string id="DeviceForm">rectangle</string>
@@ -12,6 +12,7 @@
     <bitmap id="QUALITY_POOR" filename="images/signal-1-16x16.png" />
     <bitmap id="QUALITY_USABLE" filename="images/signal-3-16x16.png" />
     <bitmap id="QUALITY_GOOD" filename="images/signal-3-16x16.png" />
+    <bitmap id="QUALITY_SENSOR" filename="images/compass-16x16.png" />
 
     <bitmap id="LauncherIcon" filename="images/launcher_icon.png" />
 	<bitmap id="Logo32x32" filename="images/logo32x32.png" />

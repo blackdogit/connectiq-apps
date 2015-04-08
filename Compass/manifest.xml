@@ -12,10 +12,10 @@
 
         <iq:permissions>
             <iq:uses-permission id="Positioning"/>
+            <iq:uses-permission id="Sensor"/>
         </iq:permissions>
 
         <iq:languages>
-            <iq:language>dan</iq:language>
             <iq:language>eng</iq:language>
         </iq:languages>
 

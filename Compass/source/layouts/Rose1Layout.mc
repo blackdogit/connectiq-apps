@@ -18,7 +18,7 @@ class Rose1Layout {
         size = .4*size;
 
         var m = new BDIT.DrawUtils.TM2D();
-        m.rotate(-State.currentHeading).scale(size).mirrory0();
+        m.rotate(State.currentHeading).scale(size).mirrory0();
 
         var x0 = (w/2).toNumber();
         var y0 = (h/2).toNumber();

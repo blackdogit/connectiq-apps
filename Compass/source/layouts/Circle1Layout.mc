@@ -26,7 +26,7 @@ class Circle1Layout {
         dc.setPenWidth(3);
         for (var i = 0; i < ticks; i = i+1) {
             var m = new BDIT.DrawUtils.TM2D();
-            m.rotate(-State.currentHeading+angle*i).scale(size).mirrory0();
+            m.rotate(State.currentHeading+angle*i).scale(size).mirrory0();
             var pn = m.t(0, 1);
             var e = .8;
             dc.setColor(State.fg, State.bg);
@@ -42,6 +42,6 @@ class Circle1Layout {
         }
         BDIT.DrawUtils.drawArc(dc, x0, y0, size, null, null, State.fg, 3);
 
-        dc.drawText(x0, y0, G.FONT_MEDIUM, State.currentHeadingDeg+"°", G.TEXT_JUSTIFY_CENTER|G.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(x0+1, y0, G.FONT_MEDIUM, State.currentHeadingDeg+"°", G.TEXT_JUSTIFY_CENTER|G.TEXT_JUSTIFY_VCENTER);
     }
 }

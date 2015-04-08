@@ -12,7 +12,7 @@ using Toybox.Math;
 //! Various drawing utilities used in several of the views
 module DrawUtils {
     //! Array with the images for each of the Position.QUALITY_ constants
-    var gpsQualityImages = [null, null, null, null, null];
+    var gpsQualityImages = [null, null, null, null, null, null];
     //! Draws the current GPS accuracy in the top right corner as a small icon
     function drawGPSQuality(dc) {
         if (gpsQualityImages[State.currentAccuracy] == null) {
@@ -26,6 +26,8 @@ module DrawUtils {
                 gpsQualityImages[State.currentAccuracy] = UI.loadResource(Rez.Drawables.QUALITY_USABLE);
             } else if (State.currentAccuracy == Pos.QUALITY_GOOD) {
                 gpsQualityImages[State.currentAccuracy] = UI.loadResource(Rez.Drawables.QUALITY_GOOD);
+            } else if (State.currentAccuracy == State.QUALITY_SENSOR) {
+                gpsQualityImages[State.currentAccuracy] = UI.loadResource(Rez.Drawables.QUALITY_SENSOR);
             }
         }
 

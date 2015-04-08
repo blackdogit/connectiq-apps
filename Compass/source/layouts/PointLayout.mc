@@ -17,8 +17,7 @@ class PointLayout {
 
     function draw(dc) {
         var txt = "--";
-        var deg = (State.currentHeading/Math.PI*180).toNumber();
-        if (deg < 0) { deg = deg+360; }
+        var deg = State.currentHeadingDeg;
 
         if (deg <= 22.5) {
             txt = HEADING_N;
