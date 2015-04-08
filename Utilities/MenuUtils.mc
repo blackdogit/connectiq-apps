@@ -4,14 +4,17 @@ using Toybox.WatchUi as UI;
 using Toybox.Graphics as G;
 using Toybox.Lang;
 
+// Depends on
+// - ArrayUtils
+
 //! Very simple Settings Menu
 //!
 //! To use:
 module BDIT {
-module SettingsUtils {
-    const VERSION = "20150402";
+module MenuUtils {
+    const VERSION = "20150407";
 
-    class SettingsMenu extends UI.View {
+    class Menu extends UI.View {
         hidden var title = "Settings";
         hidden var onSelectMethod = null;
 
