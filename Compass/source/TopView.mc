@@ -57,7 +57,7 @@ class TopView extends UI.View {
         Sensor.enableSensorEvents(method(:onSensor));
     }
 
-    var layouts = [ new Circle2Layout(), new Circle1Layout(), new DegLayout(), new SimpleArrowLayout(), new Rose1Layout(), new PointLayout() ];
+    var layouts = [ new Circle2Layout(), new Circle1Layout(), new DegLayout(), new SimpleArrowLayout(), new Rose1Layout(), new Rose2Layout(), new PointLayout() ];
     var layoutNo = 0;
 
     var L = -1;
@@ -104,7 +104,7 @@ class TopView extends UI.View {
         if (layoutNo < 0) { layoutNo = layoutNo+s; }
         if (layoutNo >= s) { layoutNo = layoutNo-s; }
 
-        State.currentSensorHeading = 65.0/180*Math.PI;
+        //State.currentSensorHeading = 65.0/180*Math.PI;
         // Prefer sensor (magnetic compass) over GPS
         //Sys.println("use GPS="+State.useGPS+" sensor="+State.useSensor);
         if (State.useSensor && State.currentSensorHeading != null) {
