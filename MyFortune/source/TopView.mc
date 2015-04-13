@@ -266,7 +266,9 @@ class TopView extends UI.View {
 
     function menu() {
         var menu = new BDIT.MenuUtils.Menu({:title => "Quotes"}, method(:onMenuItem));
-        menu.addItem(:toTop, "To the Top");
+        if (!Conf.captureArrowKeys) {
+            menu.addItem(:toTop, "To the Top");
+        }
         menu.addItem(:update, "Update");
         menu.addItem(:sources, "Sources");
         menu.addItem(:dailyQuote, "Quote of the Day");
