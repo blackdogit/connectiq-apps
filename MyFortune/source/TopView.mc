@@ -3,6 +3,7 @@ using Toybox.WatchUi as UI;
 using Toybox.System as Sys;
 using Toybox.Graphics as G;
 using Toybox.Communications as Comm;
+using Toybox.Time;
 
     const SOURCES = {
         "esr" => "Eric S. Raymond",
@@ -53,13 +54,22 @@ using Toybox.Communications as Comm;
     };
 
 module Conf {
+    //! Whether a quote is kept for a day at a time
     var dailyQuote = false;
+    //! Quoute sources {"source" => true/false}
     var CONF = {};
+    //! Last quote if dailyQuote == true
     var lastQuote = null;
+    //! Last quote timeout if dailyQuote == true
     var lastQuoteTimeout = null;
+    //! Whether arrows should be captured
+    var captureArrowKeys = false;
 
     function loadConf() {
         var app = App.getApp();
+
+        captureArrowKeys = app.getProperty("CAPTURE_ARROW_KEYS");
+        if (captureArrowKeys == null) { captureArrowKeys = false; }
 
         dailyQuote = app.getProperty("DAILY_QUOTE");
         if (dailyQuote == null) { dailyQuote = false; }
@@ -91,6 +101,7 @@ module Conf {
         var app = App.getApp();
         app.setProperty("SOURCES", CONF);
         app.setProperty("DAILY_QUOTE", dailyQuote);
+        app.setProperty("CAPTURE_ARROW_KEYS", captureArrowKeys);
         app.setProperty("LAST_QUOTE", lastQuote);
         app.setProperty("LAST_QUOTE_TIMEOUT", lastQuoteTimeout);
     }
@@ -102,6 +113,8 @@ class TopView extends UI.View {
     var myTopLine = 0;
     var deviceForm;
 
+    var isCaptureArrowKeys = false;
+
     var TAB;
 
     function initialize() {
@@ -109,7 +122,8 @@ class TopView extends UI.View {
         TAB = UI.loadResource(Rez.Strings.TAB);
         Conf.loadConf();
 
-        if (!Conf.dailyQuote || Conf.lastQuote == null || Conf.lastQuoteTimeout > Sys.getTimer()) {
+        //Sys.println("Conf.dailyQuote="+Conf.dailyQuote+", Conf.lastQuote="+Conf.lastQuote+", Conf.lastQuoteTimeout="+Conf.lastQuoteTimeout+", Time.today()="+Time.today().value());
+        if (!Conf.dailyQuote || Conf.lastQuote == null || Conf.lastQuoteTimeout == null || Conf.lastQuoteTimeout < Time.today().value()) {
             update();
         } else {
             setMessage(Conf.lastQuote);
@@ -123,6 +137,18 @@ class TopView extends UI.View {
     }
 
     function onShow() {
+        captureArrowsKeysIfWanted();
+    }
+
+    function captureArrowsKeysIfWanted() {
+        Sys.println("isCaptureArrowKeys="+isCaptureArrowKeys+", Conf.captureArrowKeys="+Conf.captureArrowKeys);
+        if (Conf.captureArrowKeys == isCaptureArrowKeys) { return; }
+        if (Conf.captureArrowKeys) {
+            UI.pushView(self, getBehavior(), UI.SLIDE_IMMEDIATE);
+        } else {
+            UI.popView(UI.SLIDE_IMMEDIATE);
+        }
+        isCaptureArrowKeys = Conf.captureArrowKeys;
     }
 
     function onHide() {
@@ -151,7 +177,11 @@ class TopView extends UI.View {
 
     function onReceive(code, data) {
         if (data == null) {
-            setMessage("Cannot get a new quote... Error "+code+".");
+            var error = "Error "+code;
+            if (code == Comm.BLE_CONNECTION_UNAVAILABLE) {
+                error = "No connection to phone";
+            }
+            setMessage("Cannot get a new quote... "+error+". Retry later.");
             return;
         }
         if (code != 200) {
@@ -159,15 +189,14 @@ class TopView extends UI.View {
             return;
         }
         var m = data["quote"];
-        Sys.println("onReceive("+code+", "+data+") quote.len="+m.length());
+        //Sys.println("onReceive("+code+", "+data+") quote.len="+m.length());
 
         var source = data["source"];
 
         // Remove special HTML quoting
         m = decodeHTML(m)+"\n["+SOURCES[source]+"]";
         Conf.lastQuote = m;
-        var t = Sys.getTimer();
-        Conf.lastQuoteTimeout = ((t / (24*60*60)).toNumber()+1)*24*60*60;
+        Conf.lastQuoteTimeout = Time.today().value();
         Conf.saveConf();
         setMessage(m);
     }
@@ -221,8 +250,12 @@ class TopView extends UI.View {
         }
     }
 
+    var behavior = null;
     function getBehavior() {
-        return new ViewInputDelegate(self);
+        if (behavior == null) {
+            behavior = new ViewInputDelegate(self);
+        }
+        return behavior;
     }
 
     function move(no) {
@@ -233,9 +266,11 @@ class TopView extends UI.View {
 
     function menu() {
         var menu = new BDIT.MenuUtils.Menu({:title => "Quotes"}, method(:onMenuItem));
+        menu.addItem(:toTop, "To the Top");
         menu.addItem(:update, "Update");
         menu.addItem(:sources, "Sources");
-        menu.addItem(:dailyQuote, "Daily Quote");
+        menu.addItem(:dailyQuote, "Quote of the Day");
+        menu.addItem(:captureArrows, "Capture arrow keys");
         menu.addItem(:showVersion, "About");
 
         updateMenu(menu);
@@ -245,14 +280,21 @@ class TopView extends UI.View {
 
     function updateMenu(menu) {
         menu.setValue(:dailyQuote, Conf.dailyQuote ? "on" : "off");
+        menu.setValue(:captureArrows, Conf.captureArrowKeys ? "on" : "off");
     }
 
     function onMenuItem(menu, item) {
-        if (item == :update) {
+        if (item == :toTop) {
+            UI.popView(UI.SLIDE_IMMEDIATE);
+            move(-100000);
+        } else if (item == :update) {
             UI.popView(UI.SLIDE_IMMEDIATE);
             update();
         } else if (item == :dailyQuote) {
             Conf.dailyQuote = !Conf.dailyQuote;
+            Conf.saveConf();
+        } else if (item == :captureArrows) {
+            Conf.captureArrowKeys = !Conf.captureArrowKeys;
             Conf.saveConf();
         } else if (item == :sources) {
             var sources = new BDIT.MenuUtils.Menu({:title => "Sources"}, method(:onSourceItem));
@@ -314,18 +356,15 @@ class ViewInputDelegate extends UI.InputDelegate {
         if (key == UI.KEY_MENU) {
             view.menu();
             return true;
-        }
-        if (key == UI.KEY_ENTER) {
+        } else if (key == UI.KEY_ENTER) {
             //Sys.println("enter");
             view.move(4);
             return true;
-        }
-        if (key == UI.KEY_DOWN) {
+        } else if (key == UI.KEY_DOWN) {
             //Sys.println("down");
             view.move(4);
             return true;
-        }
-        if (key == UI.KEY_UP) {
+        } else if (key == UI.KEY_UP) {
             //Sys.println("up");
             view.move(-4);
             return true;

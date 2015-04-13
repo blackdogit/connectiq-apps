@@ -5,7 +5,7 @@ using Toybox.WatchUi as UI;
 class App extends App.AppBase {
     function onStart() {
         Sys.println("VERSION: "+UI.loadResource(Rez.Strings.Version));
-        clearProperties();
+        //clearProperties();
     }
 
     function onStop() {

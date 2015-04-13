@@ -12,13 +12,14 @@ using Toybox.Lang;
 //! To use:
 module BDIT {
 module MenuUtils {
-    const VERSION = "20150407";
+    const VERSION = "20150412";
 
     class Menu extends UI.View {
         hidden var title = "Settings";
         hidden var onSelectMethod = null;
 
         hidden var items = [];
+        hidden var dict = {};
         hidden var no = 0;
 
         function initialize(options, onSelect) {
@@ -30,7 +31,9 @@ module MenuUtils {
         }
 
         function addItem(symbol, label, value) {
-            items = BDIT.ArrayUtils.arrayAdd(items, items.size(), [symbol, label, value]);
+            var item = [symbol, label, value];
+            items = BDIT.ArrayUtils.arrayAdd(items, items.size(), item);
+            dict[symbol] = item;
         }
 
         function setLabel(symbol, label) {
@@ -123,10 +126,11 @@ module MenuUtils {
         }
 
         hidden function getItem(symbol) {
-            for (var i = 0; i < items.size(); i = i+1) {
-                if (items[i][0] == symbol) { return items[i]; }
-            }
-            return null;
+            return dict[symbol];
+            //for (var i = 0; i < items.size(); i = i+1) {
+            //    if (items[i][0] == symbol) { return items[i]; }
+            //}
+            //return null;
         }
 
         function onMenuSelect() {
